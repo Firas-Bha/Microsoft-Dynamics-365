@@ -1,0 +1,1144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="PFEProject">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1850293172 - Field 4257671115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AccountSelection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field AccountSelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2050018346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CertificateOfAnalysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field CertificateOfAnalysis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field CreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2409186870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreatedDateAndTime</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field CreatedDateAndTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QualityOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReferenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field ReferenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReferenceType</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field ReferenceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SequenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 2068121341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Site</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Site - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1850293172 - Field 1484878399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warehouse</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Warehouse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 422618514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AccountName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field AccountName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 4257671115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AccountSelection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field AccountSelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2050018346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CertificateOfAnalysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field CertificateOfAnalysis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreatedBy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field CreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2409186870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreatedDateAndTime</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field CreatedDateAndTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QualityOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReferenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field ReferenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ReferenceType</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field ReferenceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SequenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 2068121341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Site</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Site - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestGroup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 333805105 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestResult</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field TestResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 939504309 - Field 1484878399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warehouse</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Warehouse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 265784179 - Field 1763702386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemQualityGroupTable - Field Item Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 265784179 - Field 1495420270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemQualityGroupTable - Field Quality Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 2425853854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Full Blocking</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field FullBlocking - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 945827239 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemSamplingValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field ItemSamplingValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 374908394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field QuantitySpecification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 3769583435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field SamplingScope - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3680963472 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Number Setup - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3680963472 - Field 2542794289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PKEY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Number Setup - Field PKEY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3562561008 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityGroupTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3562561008 - Field 2498952910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QualityGroup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityGroupTable - Field QualityGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 862660366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include In Result</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field IncludeInResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 320527390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outcome</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Outcome - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QualityOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 1714737523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Results Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ResultsQuantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 223679595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ResultsValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ResultsValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 3915090257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AcceptableQuality</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field AcceptableQuality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QualityOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SequenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 333805105 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestResult</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field TestResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 4130991583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field TestValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2586354053 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Setup Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sequence Number Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2586354053 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sequence Number Setup - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2586354053 - Field 2488340450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PKEY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Sequence Number Setup - Field PKEYY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 2242913203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AcceptableQualityLevel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field AcceptableQualityLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 4273561099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MaximumMeasurementValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field MaximumMeasurementValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 991277921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MinimumMeasurementValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field MinimumMeasurementValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 1354222690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 2658400029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acq</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field Acq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 2674541103 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Effective</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field Effective - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 4012821365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field Expiration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SequenceNumber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestGroup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4153764138 - Field 4130991583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupCreationTable - Field TestValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 2242913203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acceptable Quality Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field AcceptableQualityLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 4150030736 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Destructive</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field Destructive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 97469570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ItemSampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field ItemSampling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2004694489 - Field 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestGroupTable - Field TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 1477336402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Precision</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Precision - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestInstrument</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 1354222690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1812170169 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariableOutcomesTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1812170169 - Field 320527390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outcome</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariableOutcomesTable - Field Outcome - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1812170169 - Field 1490924562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OutcomeStatus</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariableOutcomesTable - Field OutcomeStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1812170169 - Field 2371676730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariableOutcomesTable - Field Variable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 151950735 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariablesTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 151950735 - Field 2371676730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestVariablesTable - Field Variable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4221793808 - Field 1509017794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Worker</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WorkerResponsibleTable - Field Worker - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4221793808 - Field 1150853614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Worker Responsible</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WorkerResponsibleTable - Field WorkerResponsible - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3675416176 - Action 803116038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CertificateOfAnalysisList - Action ExportReport - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3675416176 - Action 4225484825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Certificate Of Analysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CertificateOfAnalysisList - Action GoToCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 2531019501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Check</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control QualityCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 4257671115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control AccountSelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control ReferenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control ReferenceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 3119688693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control Vendor Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 1271711743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control QualityResultsList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3903787219 - Control 1928153799 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control TestPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Quality List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 676714041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control QualityResults - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 2613342314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control QualityOrdersCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 4257671115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control AccountSelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control ReferenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control ReferenceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the record is open, waiting to be approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Control 3119688693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control Vendor Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Action 1491615926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Quality Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action AddQualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Action 1550444490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Certificate Of Analysis Printing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action CertificateOFAnalysis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Action 1394230513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order Line Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action QualityOrderLineResults - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Action 2603803691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action QualityOrderResults - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1134873454 - Action 3657829122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action Validate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>About Item Sampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 1388160623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Samplings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control ItemSamplings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 97469570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control ItemSampling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 3769583435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sampling Scope</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control SamplingScope - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 2675496269 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 2425853854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Full Blocking</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control FullBlocking - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 1177963004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sampling Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control SamplingQuantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 374908394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control QuantitySpecification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Control 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Control Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Action 824214344 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling List View</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Action ItemSamplingList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3031683627 - Action 1882844574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemSamplingsCard - Action Test Groups - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3680963472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Number Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 676714041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control QualityResults - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 3915090257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acceptable Quality</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control AcceptableQuality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sequence Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 333805105 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Result</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control TestResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 4130991583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control TestValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Action 1692444235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Value for Sequence Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Action ActionName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3284534128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Select Number Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2620720494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Records &amp; Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2620720494 - Control 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sequence Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationList - Control SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2620720494 - Control 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationList - Control TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2620720494 - Control 4130991583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationList - Control TestValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2620720494 - Action 1692444235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Value for Sequence Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationList - Action ActionName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1452947781 - Control 2176095272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sequence Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationPage - Control SequenceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1452947781 - Control 4130991583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupCreationPage - Control TestValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 2771479364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control TestGroupCreation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 1928153799 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control TestPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 1495377682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control TestGroupSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 2242913203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acceptable Quality Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control AcceptableQualityLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 97469570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control ItemSampling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 937147918 - Control 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPage - Control TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Groups</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Control 1928153799 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Control TestPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Control 710972128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Groups</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Control Create - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Control 2242913203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acceptable Quality Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Control AcceptableQualityLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Control 97469570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Control ItemSampling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Control 1069619403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Control TestGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Action 11242162 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Action LinkToTests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Action 3266587632 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Load Selected Item Attributes Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Action LoadItemAttributesData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1191384532 - Action 2771479364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Group Creation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestGroupPageList - Action TestGroupCreation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1448858202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestInstumentSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1448858202 - Control 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestInstumentSetup - Control TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tests Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Control 2242913203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Acceptable Quality Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Control AcceptableQualityLevel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Control 4273561099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maximum Measurement Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Control MaximumMeasurementValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Control 991277921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Minimum Measurement Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Control MinimumMeasurementValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Control 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Control TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Action 1583858231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Action Tests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Action 2734714205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Variables new line creation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Action TestVariableNewLineCreation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Action 4024475914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Variables outcomes addition</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Action TestVariableOutcomeAddition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2734714205 - Action 1676140619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outcomes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestVariableNewLineCreation - Action Outcomes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 4257671115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn AccountSelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2050018346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Certificate Of Analysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn CertificateOfAnalysis - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn CreatedBy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2409186870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created Date And Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn CreatedDateAndTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn ItemNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn QualityOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantitiy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn ReferenceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2029967575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refernce Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn RefernceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 2068121341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Site</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Site - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - ReportColumn 1484878399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warehouse</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Warehouse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip title</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - RequestPage RequestOptionsPage - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Report 2858589782 - RequestPage 2516438534 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip content</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - RequestPage RequestOptionsPage - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4271895806 - Action 3416971064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
+          <source>Quality Order Line Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension QualityOrderExtension - Action LineResults - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 2495360279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Check Quality Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Check Quality Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1911591224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Certificate Of Analysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action CertificateOfAnalysisList  - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1513904647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Purchase Order  - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1855414649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Item Quality Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Item Quality Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 3185387855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Variable Outcomes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action PageOutcomeAddition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 2852714619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Quality Groups</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Quality Groups - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1882844574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Test Groups</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Test Groups - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 235451453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Test Variables</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Test Variables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 3529496180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Test Instruments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action TestInstruments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1583858231 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Tests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Tests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 3368603653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Demandes d’achat</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Demandes d’achat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1490924562 - EnumValue 2108159406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum OutcomeStatus - EnumValue Fail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1490924562 - EnumValue 1401976019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pass</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum OutcomeStatus - EnumValue Pass - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 374908394 - EnumValue 3581780471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum QuantitySpecification - EnumValue FixedQuantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 374908394 - EnumValue 2092701239 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum QuantitySpecification - EnumValue VariableQuantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 513339096 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Status - EnumValue Open - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 513339096 - EnumValue 1401976019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pass</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Status - EnumValue Pass - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4130991583 - EnumValue 3788557405 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestValue - EnumValue Average - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4130991583 - EnumValue 1508634494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manual</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestValue - EnumValue Manual - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4130991583 - EnumValue 3321962316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maximum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestValue - EnumValue Maximum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4130991583 - EnumValue 644496674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Minimum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum TestValue - EnumValue Minimum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 1869533118 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fraction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Fraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 3883182266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Integer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Integer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Option</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Option - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 3130140515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gram</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Gram - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 2643066310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hz</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Hz - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 2494429510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ohm</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Ohm - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Option</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Option - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

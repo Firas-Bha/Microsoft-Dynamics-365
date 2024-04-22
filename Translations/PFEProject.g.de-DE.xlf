@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-DE" original="PFEProject.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3477626165 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <target>Prüfen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <target>Prüfgerät</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Art</target>
+          <target>Typ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3477626165 - Field 1354222690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Einheit</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableTests - Field Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <target>Description</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 1477336402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Precision</source>
+          <target>Präzision</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Precision - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestInstrument</source>
+          <target>Prüfgerät</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 347046493 - Field 1354222690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Einheit</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TestInstrument - Field Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1448858202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument Setup</source>
+          <target>Einrichtung des Testgeräts</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestInstumentSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1448858202 - Control 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <target>Prüfgerät</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestInstumentSetup - Control TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tests Setup</source>
+          <target>Tests einrichten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4216222406 - Control 347046493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Instrument</source>
+          <target>Prüfgerät</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Tests Setup - Control TestInstrument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 1869533118 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fraction</sourc>
+          <target>Prüfgerät</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Fraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 3883182266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Integer</source>
+          <target>Ganzzahl</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Integer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Option</source>
+          <target>Option</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Option - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 3130140515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gram</source>
+          <target></target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Gram - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 2643066310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hz</source>
+          <target></target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Hz - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 2494429510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ohm</source>
+          <target></target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Ohm - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1354222690 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Option</source>
+          <target>Option</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Unit - EnumValue Option - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
