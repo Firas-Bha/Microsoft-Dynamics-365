@@ -58,6 +58,12 @@ pageextension 50122 RHMenu extends "Business Manager Role Center"
                     ApplicationArea = All;
                 }
 
+                  action("Item Sampling List View")
+                {
+                    Caption = 'Item Sampling List';
+                    ApplicationArea = All;
+                    RunObject = page "Item Sampling List View";
+                }
                
 
             }
@@ -83,9 +89,15 @@ pageextension 50122 RHMenu extends "Business Manager Role Center"
                     ApplicationArea = All;
                     RunObject = page "CertificateOfAnalysisList";
                 }
+                 action("QualityOrderLineResultsTable ")
+                {
+                    Caption = 'Quality Order Line Results';
+                    ApplicationArea = All;
+                    RunObject = page "QualityOrderLineResults";
+                }
 
                
-
+                    
 
 
             }

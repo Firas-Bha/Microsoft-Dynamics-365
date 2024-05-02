@@ -76,11 +76,13 @@ report 50128 MyReport
                 IncludeCaption = true;
                 Caption = 'Quality Order';
             }
+            /*
             column(Quantity; Quantity)
             {
                 IncludeCaption = true;
                 Caption = 'Quantitiy';
             }
+            */
              
         }
 

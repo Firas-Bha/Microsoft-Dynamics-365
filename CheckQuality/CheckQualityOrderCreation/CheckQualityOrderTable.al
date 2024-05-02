@@ -4,17 +4,34 @@ table 50120 CheckQualityOrderTable
 
     fields
     {
+        field(20; Code; Integer)
+        {
+            DataClassification = ToBeClassified;
+            AutoIncrement=true; 
+            TableRelation= QualityOrderLineResultsTable.Code;   
+
+        }
         field(1; ReferenceType; Code[20])
         {
             Editable = false;
             DataClassification = ToBeClassified;
         }
-        field(19; Name; Text[100])
+        field(19; "No."; code[20])
         {
-            TableRelation = "Purchase Header"."Pay-to Name";
-            ValidateTableRelation = false;
+            TableRelation = "Purchase Header"."No.";
+          //  ValidateTableRelation = false;
             DataClassification = ToBeClassified;
         }
+        /*
+         field(20; "No."; code[20])
+        {
+            TableRelation = "Purchase Header"."No.";
+            ValidateTableRelation = false;
+            DataClassification = ToBeClassified;
+            
+        }
+        */
+        
         field(2; AccountSelection; Code[20])
         {
             DataClassification = ToBeClassified;
@@ -41,10 +58,12 @@ table 50120 CheckQualityOrderTable
             DataClassification = ToBeClassified;
             TableRelation = TestGroupTable.TestGroup;
         }
+        /*
         field(6; Quantity; Decimal)
         {
             DataClassification = ToBeClassified;
         }
+        */
         field(8; ItemNumber; Code[20])
         {
             DataClassification = ToBeClassified;
@@ -62,12 +81,21 @@ table 50120 CheckQualityOrderTable
         {
             DataClassification = ToBeClassified;
         }
+         field(12; Quantityy;Decimal)
+        {
+            Caption='Quantity Value';
+            DataClassification = ToBeClassified;
+            TableRelation= "ItemSamlingsTable".value;
+            ValidateTableRelation=false;
+        }
+        /*
         field(12; CertificateOfAnalysis; Integer)
         {
             DataClassification = ToBeClassified;
             AutoIncrement = true;
 
         }
+        */
         field(13; CreatedBy; Code[20])
         {
             DataClassification = ToBeClassified;
@@ -129,6 +157,7 @@ table 50120 CheckQualityOrderTable
         {
             Clustered = true;
         }
+       
     }
 
     fieldgroups

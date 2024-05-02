@@ -70,11 +70,13 @@ table 50124 CertificateOfAnalysisTable
             TableRelation = CheckQualityOrderTable.QualityOrder;
             DataClassification = ToBeClassified;
         }
+        /*
         field(14; Quantity; Decimal)
         {
             TableRelation = CheckQualityOrderTable.Quantity;
             DataClassification = ToBeClassified;
         }
+        */
     }
 
     keys

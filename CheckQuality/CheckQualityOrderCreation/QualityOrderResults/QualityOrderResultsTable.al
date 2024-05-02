@@ -34,6 +34,8 @@ table 50123 QualityResultsTable
             TableRelation = CheckQualityOrderTable.QualityOrder;
             //TableRelation = "No. Series".Code;
         }
+        
+        
         /*
          field(20; CertificateOfAnalysis; Integer)
         {
@@ -130,6 +132,10 @@ table 50123 QualityResultsTable
         {
             Clustered = true;
         }
+        
+         
+
+        
     }
     
     fieldgroups

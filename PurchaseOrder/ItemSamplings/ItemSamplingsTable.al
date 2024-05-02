@@ -35,24 +35,34 @@ table 50139 ItemSamlingsTable
         {
             DataClassification = ToBeClassified;
             
+            
         }
 
 
         field(6; FullBlocking; Boolean)
         {
             Caption = 'Full Blocking';
-            
-
+        
         }
-
+        field(7; Pourcentage; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        
+        field(8; "Specified Value"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
     {
-        key(Key1; ItemSamplingValue)
+        key(Key1; Value)
         {
-            Clustered = true;
+            Clustered = false;
         }
+        
+        
     }
 
     fieldgroups
@@ -68,10 +78,26 @@ table 50139 ItemSamlingsTable
 
     end;
 
-    trigger OnModify()
+ trigger OnModify()
+var
+    OriginalValue: Decimal;
+    Percentage: Decimal;
+    NewValue: Decimal;
+begin
+    OriginalValue := rec.Value;
+    Percentage := rec.Pourcentage;
+    if rec.QuantitySpecification = rec.QuantitySpecification::VariableQuantity then
     begin
-
+        // Calculate the new value after applying the percentage decrease
+        NewValue := rec."Specified Value" * (Percentage / 100);
+        // Assign the calculated value to the Value field
+        rec.Value := NewValue;
+        // Now you can use the NewValue as needed
+        Message('New value after modifying Specified Value: %1', NewValue);
     end;
+end;
+
+
 
     trigger OnDelete()
     begin

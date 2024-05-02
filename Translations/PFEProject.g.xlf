@@ -38,11 +38,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field QualityOrder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1850293172 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CertificateOfAnalysisTable - Field Quantity - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 1850293172 - Field 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>ReferenceNumber</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -88,10 +83,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field AccountSelection - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 939504309 - Field 2050018346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>CertificateOfAnalysis</source>
+        <trans-unit id="Table 939504309 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field CertificateOfAnalysis - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 939504309 - Field 3425251533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>CreatedBy</source>
@@ -113,20 +108,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field ItemNumber - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 939504309 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Name</source>
+        <trans-unit id="Table 939504309 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Name - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 939504309 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>QualityOrder</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field QualityOrder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 939504309 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
+        <trans-unit id="Table 939504309 - Field 2225026662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Quantity - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Quantityy - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 939504309 - Field 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>ReferenceNumber</source>
@@ -198,6 +193,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field ItemSamplingValue - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 2079370345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pourcentage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field Pourcentage - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4249207501 - Field 374908394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quantity Specification</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -207,6 +207,11 @@
           <source>Order</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field SamplingScope - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249207501 - Field 934889147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specified Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field Specified Value - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4249207501 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Value</source>
@@ -233,25 +238,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table QualityGroupTable - Field QualityGroup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4225205571 - Field 862660366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Include In Result</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field IncludeInResult - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4225205571 - Field 3256935186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ItemNumber</source>
+        <trans-unit id="Table 4225205571 - Field 945827239 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ItemNumber - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4225205571 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Name - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4225205571 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ItemSamplingValue - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4225205571 - Field 320527390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Outcome</source>
@@ -268,15 +268,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ResultsQuantity - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4225205571 - Field 223679595 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ResultsValue</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field ResultsValue - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 4225205571 - Field 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Test</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4225205571 - Field 346344467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityOrderLineResultsTable - Field Total Quantity - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2533124731 - Field 3915090257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AcceptableQuality</source>
@@ -518,10 +518,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control QualityOrder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3903787219 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
+        <trans-unit id="Page 3903787219 - Control 2225026662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantityy</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control Quantity - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Quality Order Card - Control Quantityy - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3903787219 - Control 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reference Number</source>
@@ -582,11 +582,6 @@
           <source>Quality Order</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control QualityOrder - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1134873454 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Control Quantity - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1134873454 - Control 3656619620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reference Number</source>
@@ -948,11 +943,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn QualityOrder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 2858589782 - ReportColumn 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantitiy</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - ReportColumn Quantity - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Report 2858589782 - ReportColumn 2857026229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reference Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -993,11 +983,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report MyReport - RequestPage RequestOptionsPage - Property AboutText</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4271895806 - Action 3416971064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
-          <source>Quality Order Line Results</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension QualityOrderExtension - Action LineResults - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 1707040939 - Action 2495360279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Check Quality Order</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1008,6 +993,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action CertificateOfAnalysisList  - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 3820969475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Quality Order Line Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action QualityOrderLineResultsTable  - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1707040939 - Action 1513904647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Purchase Order</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1017,6 +1007,11 @@
           <source>Item Quality Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Item Quality Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 2050177523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Item Sampling List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Item Sampling List View - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1707040939 - Action 3185387855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Variable Outcomes</source>
@@ -1052,6 +1047,21 @@
           <source>Demandes d’achat</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Demandes d’achat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 678883167 - Field 3035113681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Number Of Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PurchaseHeaderExt - Field Number Of Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 678883167 - Field 346344467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Total Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PurchaseHeaderExt - Field Total Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4010990944 - Field 1794196373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>QualityOrder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PurchaseLineext - Field QualityOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1490924562 - EnumValue 2108159406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fail</source>

@@ -898,20 +898,11 @@
       </DefaultValue>
       <Prompt>QualityOrderCaption</Prompt>
     </ReportParameter>
-    <ReportParameter Name="QuantityCaption">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>QuantityCaption</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>QuantityCaption</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
-      <NumberOfRows>14</NumberOfRows>
+      <NumberOfRows>13</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -977,11 +968,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>12</RowIndex>
           <ParameterName>QualityOrderCaption</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>13</RowIndex>
-          <ParameterName>QuantityCaption</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
@@ -1183,12 +1169,6 @@ hlRWljd8ZkDSopHdWyzqEsouwA0CEICA1gV8dV/pvVwRmrR+xmmmP1/eYeQ+Ym2r5pzrVp00j/p0y6Hp
         </Field>
         <Field Name="QualityOrder">
           <DataField>QualityOrder</DataField>
-        </Field>
-        <Field Name="Quantity">
-          <DataField>Quantity</DataField>
-        </Field>
-        <Field Name="QuantityFormat">
-          <DataField>QuantityFormat</DataField>
         </Field>
       </Fields>
       <Query>

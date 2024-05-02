@@ -1,3 +1,4 @@
+
 page 50129 QualityOrderLineResults
 {
     PageType = List;
@@ -12,21 +13,70 @@ page 50129 QualityOrderLineResults
             repeater(QualityOrderLineResults)
             {
 
-                field(ResultsQuantity; rec.ResultsQuantity)
-                {
-                    ApplicationArea = All;
+                /*
+                    field(No; rec.no)
+                    {
+                        ApplicationArea = All;
+                        Editable = true;
+                    }
+                    */
 
+                field(QualityOrder; rec.QualityOrder)
+                {
+
+                    ApplicationArea = All;
                 }
+
                 field(Outcome; rec.Outcome)
                 {
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    var
+                        MyRecord2 : Record "TestVariableOutcomesTable";
+                    begin
+                        if MyRecord2.Get(rec.Outcome) then begin
+                            if rec.Outcome = 'ACCEPTED' then begin
+                                rec.Test:=true;
+                            end
+                            else
+                            rec.test :=false;                            
+                        end;
+                        
+                    end;
 
                 }
-                field(ResultsValue; rec.ResultsValue)
+                field(ResultsQuantity; rec.ResultsQuantity)
                 {
-                    ApplicationArea = All;
+                ApplicationArea = All;
 
-                }
+                trigger OnValidate()
+                var
+                  MyRecord1: Record "CheckQualityOrderTable";
+                  MyRecord2 : Record "ItemSamlingsTable";
+                begin
+                    
+                    if MyRecord1.Get(rec.QualityOrder) then                      
+                      //  Message('Total quantity is %1 and quantity is %2', rec."Total Quantity",MyRecord1.Quantityy);    
+                        begin
+                        if (rec."Total Quantity" >= MyRecord1.Quantityy) then 
+                 begin
+                // Display message with quantity details
+               // Message('Total quantity is %1 and quantity is %2', rec."Total Quantity",MyRecord2.Value);
+                // Display message and raise error
+                Message('Quantity Surpassed');
+                Error('Quantity Surpassed');
+                 end
+                         end
+                    end;
+                    
+                         
+        
+    
+}
+
+
+
+
                 field(IncludeInResult; rec.IncludeInResult)
                 {
                     ApplicationArea = All;
@@ -37,10 +87,8 @@ page 50129 QualityOrderLineResults
                     ApplicationArea = All;
 
                 }
-                field(QualityOrder; rec.QualityOrder)
+                field("Total Quantity"; rec."Total Quantity")
                 {
-
-                    ApplicationArea = All;
 
                 }
             }
@@ -66,51 +114,39 @@ page 50129 QualityOrderLineResults
             }
         }
     }
-    /*
-     var
-        SelectedRecord: Record QualityOrderLineResultsTable;
-    trigger OnOpenPage()
-    begin
-        if not SelectedRecord.GET() then
-        begin
-            Error('Failed to retrieve selected record.');
-            exit;
-        end;
 
-        // Filter the records based on the selected record
-        SetSelectionFilter(SelectedRecord)
-    end;
-    
-    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    trigger OnNewRecord(BelowxRec: Boolean)
     var
-        PurchaseOrderTable: Record "Purchase Header";
-        PurchaseLineTable: Record "Purchase Line";
+        totalQuantity: Decimal;
+        MyRecord2: Record "QualityOrderLineResultsTable";
     begin
         BelowxRec := false;
-        if PurchaseOrderTable.Get(PurchaseOrderTable."Pay-to Name") then begin
-            // Attempt to retrieve the related Purchase Line record
-            if PurchaseLineTable.Get(PurchaseLineTable.Type = PurchaseLineTable.Type::Item) then begin
-                // Check if the Results Quantity surpasses the Quantity in the Purchase Line
-                if (rec.ResultsQuantity > PurchaseLineTable.Quantity) then begin
-                    // Display a message and raise an error if the Quantity is surpassed
-                    Message('Quantity Surpassed');
-                    Error('Quantity Surpassed');
-                end
-                else begin
-                    // Save the record if all validations pass
-                    SaveRecord();
-                    BelowxRec := true; // Set BelowxRec to true after saving the record
-                end;
+        totalQuantity := MyRecord2."Total Quantity";
+        BelowxRec := true;
+    end;
+
+/*
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        MyRecord3: Record "TestVariableOutcomesTable";
+        MyRecord2: Record "QualityOrderLineResultsTable";
+    begin
+        BelowxRec := false;
+
+        // Attempt to retrieve the Test Outcome record
+        if MyRecord2.Get(rec.QualityOrder) then begin
+
+            if (MyRecord3.Outcome = 'ACCEPTED') then begin
+                // Set Test field to true
+                rec.Test := true;
+                BelowxRec := true;
             end
             else begin
-                // Handle cases where the related Purchase Line record cannot be retrieved
-                Error('Failed to retrieve related Purchase Line record.');
+                // Set Test field to false
+                rec.Test := false;
             end;
-        end
-        else begin
-            // Handle cases where the related Purchase Order record cannot be retrieved
-            Error('Failed to retrieve related Purchase Order record.');
         end;
+        // Return BelowxRec to indicate whether the trigger executed successfully
         exit(BelowxRec);
     end;
 */

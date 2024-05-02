@@ -17,7 +17,7 @@ page 50132 "Check Quality Order Card"
                     Caption = 'Quality Order';
                     ApplicationArea = All;
                 }
-                field("Vendor Name"; rec.Name)
+                field("Vendor Name"; rec."No.")
                 {
                     Caption = 'Name';
                     ApplicationArea = All;
@@ -56,11 +56,13 @@ page 50132 "Check Quality Order Card"
                     Caption = 'Test Group';
                     ApplicationArea = All;
                 }
+                /*
                 field(Quantity; rec.Quantity)
                 {
                     Caption = 'Quantity';
                     ApplicationArea = All;
                 }
+                */
                 field(Status; rec.Status)
                 {
                     ApplicationArea = All;
@@ -71,6 +73,11 @@ page 50132 "Check Quality Order Card"
                     Caption = 'Reference Type';
                     ApplicationArea = All;
                 }
+                  field(Quantityy; rec.Quantityy)
+                    {
+                        Caption = 'Quantityy';
+                        ApplicationArea = All;        
+                    }
                 
             }
             group(QualityResultsList)

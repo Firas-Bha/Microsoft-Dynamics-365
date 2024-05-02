@@ -31,14 +31,21 @@ page 50143 "Item Sampling List View"
                 field(QuantitySpecification; Rec.QuantitySpecification)
                 {
                     ApplicationArea = All;
+    
+
 
                 }
                 field(Value; Rec.Value)
                 {
                     ApplicationArea = all;
                     
+                }
+                field(Pourcentage; Rec.Pourcentage)
+                {
+                    ApplicationArea = all;
+                    Editable = false;
+   
                     
-
                 }
                 field(FullBlocking; Rec.FullBlocking)
                 {

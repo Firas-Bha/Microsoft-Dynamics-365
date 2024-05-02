@@ -55,15 +55,66 @@ page 50138 ItemSamplingsCard
                 {
                     Caption = 'Quantity Specification';
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    var
+                       
+                    begin
+                        
+                    end;
                 }
+                
+                field(Pourcentage; Rec.Pourcentage)
+                {
+                    ApplicationArea = All;
+                   
+                                    Editable = false;
+                    trigger OnValidate()
+                    var
+        EditableCurrCode: Boolean;
+begin
+    // Check if the QuantitySpecification is set to "Fixed"
+    if rec.QuantitySpecification = rec.QuantitySpecification::FixedQuantity then
+    begin
+        // Set the Editable property of the Pourcentage field to false
+       EditableCurrCode := true;
+    end;
+end;
+                }
+                field("Specified Value"; rec."Specified Value")
+{
+    ApplicationArea = All;
+    Editable = true;
 
+    trigger OnValidate()
+    var
+        OriginalValue: Decimal;
+        Percentage: Decimal;
+        NewValue: Decimal;
+    begin
+        // Assuming OriginalValue and Percentage are assigned elsewhere
+        OriginalValue := rec."Specified Value";
+        Percentage := rec.Pourcentage;
+        if rec.QuantitySpecification = rec.QuantitySpecification::VariableQuantity then
+        begin
+            // Call the function to calculate the new value after applying the percentage decrease
+            NewValue := CalculateValueAfterPercentageDecrease(OriginalValue, Percentage);
+            // Assign the calculated value to the specified value field
+            rec.Value := NewValue;
+            
+            // Now you can use the NewValue as needed
+            Message('New value after applying percentage decrease: %1', NewValue);
+        end;
+    end;
+}
                 field(Value; rec.Value)
                 {
                     Caption = 'Value';
-                   
-                      ApplicationArea = basic,suite;
-                    Importance=Promoted;
+                    Editable=false;
+                    ApplicationArea = basic, suite;
+                    Importance = Promoted;
+
                 }
+
             }
 
             // Group for Process
@@ -142,19 +193,24 @@ page 50138 ItemSamplingsCard
         // Ensure that the record can be inserted
         exit(true);
     end;
-    
-trigger OnOpenPage()
-begin
 
-   if rec.FullBlocking=true then
-   begin
-    Editable:=false;
-    Message('Changes Cannot be Made');
-   end;
-  
-    
+    trigger OnOpenPage()
+    begin
+
+        if rec.FullBlocking = true then begin
+            Editable := false;
+            Message('Changes Cannot be Made');
+        end;
+
+
+    end;
+procedure CalculateValueAfterPercentageDecrease(OriginalValue: Decimal; Percentage: Decimal): Decimal
+var
+    NewValue: Decimal;
+begin
+    NewValue := OriginalValue * ( Percentage / 100);
+    exit(NewValue);
 end;
-  
 
 }
 

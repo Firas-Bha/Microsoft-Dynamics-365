@@ -5,7 +5,7 @@ page 50124 QualityResultsList
     UsageCategory = Lists;
     SourceTable = QualityResultsTable;
     DelayedInsert = false;
-    CardPageId = "QualityOrderLineResults";
+   // CardPageId = "QualityOrderLineResults";
 
 
     layout
@@ -164,5 +164,10 @@ end;
         exit(true);
     end;
 
-
+trigger OnNewRecord(BelowxRec: Boolean)
+var
+    myInt: Integer;
+begin
+    
+end;
 }

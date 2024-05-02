@@ -27,7 +27,7 @@ page 50122 CheckQualityPageList
                         Caption = 'Quality Order';
                         ApplicationArea = All;
                     }
-                     field("Vendor Name"; rec.Name)
+                     field("Vendor Name"; rec."No.")
                 {
                     Caption = 'Name';
                     ApplicationArea = All;
@@ -66,20 +66,30 @@ page 50122 CheckQualityPageList
                         Caption = 'Test Group';
                         ApplicationArea = All;
                     }
+                    /*
                     field(Quantity; rec.Quantity)
                     {
                         Caption = 'Quantity';
                         ApplicationArea = All;
                     }
-                    field(Status; rec.Status)
-                    {
-                        ApplicationArea = All;
-                        ToolTip = 'Specifies whether the record is open, waiting to be approved';
-                        Style = unFavorable;
-                    }
+                    */
+                        field(Status; rec.Status)
+                        {
+                            ApplicationArea = All;
+                            ToolTip = 'Specifies whether the record is open, waiting to be approved';
+                          //  Style = stats;
+                            
+                            
+                            
+                        }
                     field(ReferenceType; rec.ReferenceType)
                     {
                         Caption = 'Reference Type';
+                        ApplicationArea = All;        
+                    }
+                     field(Quantityy; rec.Quantityy)
+                    {
+                        
                         ApplicationArea = All;        
                     }
                   
@@ -174,7 +184,7 @@ page 50122 CheckQualityPageList
                 Image = Certificate;
                 PromotedCategory = Process;
                 RunObject = page "QualityOrderLineResults";
-               // RunPageLink="QualityOrder" = field("QualityOrder");
+               RunPageLink="QualityOrder" = field("QualityOrder");
                  /*
                 trigger OnAction()
                
@@ -204,6 +214,7 @@ page 50122 CheckQualityPageList
                         rec.Status := rec.Status::Pass;
                         SaveRecord();
                         Message('Status updated to Pass.');
+                       
                     end
                     else begin
                         Message('Status is already Passed. No update performed.');
@@ -218,7 +229,6 @@ page 50122 CheckQualityPageList
     }
     var
         myInt: Integer;
-
 
 
 
