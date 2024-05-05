@@ -53,12 +53,15 @@ page 50129 QualityOrderLineResults
                 var
                   MyRecord1: Record "CheckQualityOrderTable";
                   MyRecord2 : Record "ItemSamlingsTable";
+                  MyRecord3: Record "QualityOrderLineResultsTable";
                 begin
                     
-                    if MyRecord1.Get(rec.QualityOrder) then                      
+                    if MyRecord1.Get(rec.QualityOrder) then   
+                                       
                       //  Message('Total quantity is %1 and quantity is %2', rec."Total Quantity",MyRecord1.Quantityy);    
                         begin
-                        if (rec."Total Quantity" >= MyRecord1.Quantityy) then 
+                         rec.SumQuantity:=rec."Total Quantity" + rec.ResultsQuantity;   
+                        if (rec.SumQuantity > MyRecord1.Quantityy) then 
                  begin
                 // Display message with quantity details
                // Message('Total quantity is %1 and quantity is %2', rec."Total Quantity",MyRecord2.Value);
@@ -91,6 +94,10 @@ page 50129 QualityOrderLineResults
                 {
 
                 }
+                 field("sum Quantity"; rec."SumQuantity")
+                {
+                    Editable=false;
+                }
             }
         }
         area(Factboxes)
@@ -112,6 +119,8 @@ page 50129 QualityOrderLineResults
 
                 end;
             }
+
+ 
         }
     }
 
@@ -121,7 +130,8 @@ page 50129 QualityOrderLineResults
         MyRecord2: Record "QualityOrderLineResultsTable";
     begin
         BelowxRec := false;
-        totalQuantity := MyRecord2."Total Quantity";
+         totalQuantity:= MyRecord2."Total Quantity";
+        //rec.SumQuantity := totalQuantity;
         BelowxRec := true;
     end;
 
@@ -132,21 +142,9 @@ page 50129 QualityOrderLineResults
         MyRecord2: Record "QualityOrderLineResultsTable";
     begin
         BelowxRec := false;
-
-        // Attempt to retrieve the Test Outcome record
-        if MyRecord2.Get(rec.QualityOrder) then begin
-
-            if (MyRecord3.Outcome = 'ACCEPTED') then begin
-                // Set Test field to true
-                rec.Test := true;
-                BelowxRec := true;
-            end
-            else begin
-                // Set Test field to false
-                rec.Test := false;
-            end;
-        end;
-        // Return BelowxRec to indicate whether the trigger executed successfully
+                rec.SumQuantity := rec."Total Quantity";
+                BelowxRec :=true;
+        
         exit(BelowxRec);
     end;
 */

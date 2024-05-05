@@ -54,6 +54,7 @@ table 50125 QualityOrderLineResultsTable
             CalcFormula = sum("QualityOrderLineResultsTable".ResultsQuantity where("QualityOrder" = field("QualityOrder")));
             Editable = false;
             FieldClass = FlowField;
+            
         }
         /*
         field(11; Quantity; Decimal)
@@ -68,6 +69,18 @@ table 50125 QualityOrderLineResultsTable
             TableRelation=CheckQualityOrderTable.Quantityy;
             DataClassification = ToBeClassified;
            
+        }
+        field(13; TestResultString; text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+          field(14; "SumQuantity"; Decimal)
+        {    //Caption = 'Total Quantity';
+            //Caption = 'Results Value';
+            DataClassification=ToBeClassified;
+           // Editable=false;
+        
+            
         }
         /*
          field(7; Name; Text[100])

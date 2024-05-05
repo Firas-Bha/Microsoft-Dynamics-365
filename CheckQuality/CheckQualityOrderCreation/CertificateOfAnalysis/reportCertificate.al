@@ -9,13 +9,15 @@ report 50128 MyReport
 
     dataset
     {
-        dataitem(DataItemName; CertificateOfAnalysisTable)
+        dataitem(DataItemName; CheckQualityOrderTable)
         {
+
             column(CertificateOfAnalysis; CertificateOfAnalysis)
             {
                 IncludeCaption = true;
                 Caption = 'Certificate Of Analysis';
             }
+
             column(ItemNumber; ItemNumber)
             {
                 IncludeCaption = true;
@@ -51,11 +53,7 @@ report 50128 MyReport
                 IncludeCaption = true;
                 Caption = 'Description';
             }
-            column(Test; test)
-            {
-                IncludeCaption = true;
-                Caption = 'Test';
-            }
+
             column(ReferenceType; ReferenceType)
             {
                 IncludeCaption = true;
@@ -75,6 +73,19 @@ report 50128 MyReport
             {
                 IncludeCaption = true;
                 Caption = 'Quality Order';
+
+            }
+            column(TestGroup; TestGroup)
+            {
+                IncludeCaption = true;
+                Caption = 'Test Group';
+
+            }
+            column(outc; TestGroup)
+            {
+                IncludeCaption = true;
+                Caption = 'Test Group';
+
             }
             /*
             column(Quantity; Quantity)
@@ -83,7 +94,63 @@ report 50128 MyReport
                 Caption = 'Quantitiy';
             }
             */
-             
+
+        }
+        dataitem(TestResults; QualityOrderLineResultsTable)
+        {
+            DataItemLink = QualityOrder = FIELD(QualityOrder);
+            DataItemLinkReference = DataItemName;
+            column(QualityOrderr; QualityOrder)
+            {
+                IncludeCaption = true;
+                Caption = 'Quality Order';
+            }
+
+            column(ResultsQuantity; ResultsQuantity)
+            {
+                IncludeCaption = true;
+                Caption = 'Results Quantity';
+            }
+            column(Outcome; Outcome)
+            {
+                IncludeCaption = true;
+                Caption = 'Outcome';
+            }
+            column(Test; test)
+            {
+                IncludeCaption = true;
+
+            }
+            column(TestResultString; TestResultString)
+            {
+                IncludeCaption = true;
+
+
+            }
+            trigger OnPreDataItem()
+            var
+                myInt: Integer;
+            //TestResult: record "QualityOrderLineResultsTable";
+            begin
+                TestResults.SetFilter("QualityOrder", DataItemName.QualityOrder);
+                if TestResults.FindFirst() then begin
+                    repeat
+                        if (TestResults.Test = true) then begin
+                            TestResults.TestResultString := 'PASS';
+                            TestResults.Modify();
+                            Commit();
+                        end
+                        else if (TestResults.Test = false) then begin
+                            TestResults.TestResultString := 'FAIL';
+                            TestResults.Modify();
+                            Commit();
+                        end;
+
+                    until TestResults.Next = 0;
+                end;
+            end;
+
+
         }
 
     }
@@ -117,7 +184,4 @@ report 50128 MyReport
     }
 
 
-
-    var
-        myInt: Integer;
 }

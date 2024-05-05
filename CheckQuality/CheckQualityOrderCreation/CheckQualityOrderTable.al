@@ -88,6 +88,7 @@ table 50120 CheckQualityOrderTable
             TableRelation= "ItemSamlingsTable".value;
             ValidateTableRelation=false;
         }
+        
         /*
         field(12; CertificateOfAnalysis; Integer)
         {
@@ -129,6 +130,17 @@ table 50120 CheckQualityOrderTable
 
 
         }
+        field(21; CertificateOfAnalysis; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(22; "Total Quantity"; Decimal)
+        {
+            //Caption = 'Results Value';
+            TableRelation=QualityOrderLineResultsTable."Total Quantity";
+        }
+
         /*
         field(13; TestValue; Enum TestValue)
         {
@@ -180,5 +192,6 @@ enum 50133 Status
 
     value(0; Open) { Caption = 'Open'; }
     value(1; Pass) { Caption = 'Pass'; }
+    value(2; Fail) { Caption = 'Fail'; }
 
 }

@@ -7,7 +7,7 @@ page 50122 CheckQualityPageList
     SourceTable = CheckQualityOrderTable;
     CardPageId = "Check Quality Order Card";
 
-    
+
     //Editable = false;
 
     layout
@@ -27,12 +27,12 @@ page 50122 CheckQualityPageList
                         Caption = 'Quality Order';
                         ApplicationArea = All;
                     }
-                     field("Vendor Name"; rec."No.")
-                {
-                    Caption = 'Name';
-                    ApplicationArea = All;
-                }
-                  
+                    field("Vendor Name"; rec."No.")
+                    {
+                        Caption = 'Name';
+                        ApplicationArea = All;
+                    }
+
                     field(ItemNumber; rec.ItemNumber)
                     {
                         Caption = 'Item Number';
@@ -73,36 +73,36 @@ page 50122 CheckQualityPageList
                         ApplicationArea = All;
                     }
                     */
-                        field(Status; rec.Status)
-                        {
-                            ApplicationArea = All;
-                            ToolTip = 'Specifies whether the record is open, waiting to be approved';
-                          //  Style = stats;
-                            
-                            
-                            
-                        }
+                    field(Status; rec.Status)
+                    {
+                        ApplicationArea = All;
+                        ToolTip = 'Specifies whether the record is open, waiting to be approved';
+                        //  Style = stats;
+
+
+
+                    }
                     field(ReferenceType; rec.ReferenceType)
                     {
                         Caption = 'Reference Type';
-                        ApplicationArea = All;        
+                        ApplicationArea = All;
                     }
-                     field(Quantityy; rec.Quantityy)
+                    field(Quantityy; rec.Quantityy)
                     {
-                        
-                        ApplicationArea = All;        
-                    }
-                  
 
-            }
+                        ApplicationArea = All;
+                    }
+
+
+                }
             }
 
             group("Check Quality Results & Records")
             {
-                
+
                 part(QualityResults; QualityResultsList)
                 {
-                    
+
                     Caption = 'List';
                     ApplicationArea = All;
                     SubPageLink = "QualityOrder" = field("QualityOrder");
@@ -110,7 +110,7 @@ page 50122 CheckQualityPageList
 
                 }
             }
-            
+
 
         }
 
@@ -125,7 +125,7 @@ page 50122 CheckQualityPageList
     actions
     {
         area(Processing)
-        { 
+        {
             action(AddQualityOrder)
             {
                 ApplicationArea = All;
@@ -135,7 +135,7 @@ page 50122 CheckQualityPageList
                 Image = NewItem;
                 PromotedCategory = Process;
                 RunObject = page "Check Quality Order Card";
-                
+
                 trigger OnAction()
                 begin
 
@@ -184,22 +184,42 @@ page 50122 CheckQualityPageList
                 Image = Certificate;
                 PromotedCategory = Process;
                 RunObject = page "QualityOrderLineResults";
-               RunPageLink="QualityOrder" = field("QualityOrder");
-                 /*
-                trigger OnAction()
-               
-                var 
-                page : page "QualityOrderLineResults";
-                record: record  "QualityOrderLineResultsTable";
-                begin
-                    if record.Get(rec.QualityOrder) then
-                    begin
-                    page.Run();
+                RunPageLink = "QualityOrder" = field("QualityOrder");
+                /*
+               trigger OnAction()
 
-                    end;
- */
-                
-               
+               var 
+               page : page "QualityOrderLineResults";
+               record: record  "QualityOrderLineResultsTable";
+               begin
+                   if record.Get(rec.QualityOrder) then
+                   begin
+                   page.Run();
+
+                   end;
+*/
+
+
+            }
+            action(ExportReport)
+            {
+                Caption = 'Export Report';
+                Image = Export;
+                PromotedCategory = Report;
+                Promoted = true;
+                PromotedIsBig = true;
+                ApplicationArea = All;
+                RunObject = report "MyReport";
+                trigger OnAction()
+                var
+                    myInt: Integer;
+                begin
+                    Rec.FIND;
+                    Rec.SETRECFILTER;
+                    Report.Run(50128, true, true, Rec);
+                    rec.Reset();
+                end;
+
             }
             action(Validate)
             {
@@ -208,24 +228,47 @@ page 50122 CheckQualityPageList
 
                 trigger OnAction()
                 var
-               
+                    QualityOrder: record "QualityOrderLineResultsTable";
+                    CheckQuality: record "QualityResultsTable";
+
                 begin
-                  if (Rec.Status = Rec.Status::Open) then begin
-                        rec.Status := rec.Status::Pass;
-                        SaveRecord();
-                        Message('Status updated to Pass.');
-                       
-                    end
-                    else begin
-                        Message('Status is already Passed. No update performed.');
+                    QualityOrder.SetFilter(QualityOrder, rec.QualityOrder);
+                    if QualityOrder.Findlast() then begin
+                        if (Rec.Status = Rec.Status::Open) then begin
+                            CheckQuality.SetFilter(QualityOrder, rec.QualityOrder);
+                            if CheckQuality.FindFirst() then begin
+                                if (CheckQuality.TestResult = true) then begin
+                                    if (rec.Quantityy = QualityOrder."SumQuantity") then begin
+                                        rec.Status := rec.Status::Pass;
+                                        rec.Modify();
+                                        SaveRecord();
+                                        Message('Status updated to Pass.');
+                                    end
+                                    else
+                                        rec.Status := rec.Status::Open;
+                                    Message('Status Will Stay Opened')
+                                end;
+                                if (CheckQuality.TestResult = false) then begin
+                                    if (rec.Quantityy = QualityOrder."SumQuantity") then begin
+                                        rec.Status := rec.Status::Fail;
+                                        rec.Modify();
+                                        SaveRecord();
+                                        Message('Status Failed.');
+                                    end;
+
+                                end;
+                            end;
+
+                        end;
                     end;
                 end;
-                    
-                  
+
+
+
             }
         }
-       
-        
+
+
     }
     var
         myInt: Integer;

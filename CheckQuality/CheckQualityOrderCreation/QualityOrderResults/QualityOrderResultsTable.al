@@ -34,7 +34,30 @@ table 50123 QualityResultsTable
             TableRelation = CheckQualityOrderTable.QualityOrder;
             //TableRelation = "No. Series".Code;
         }
-        
+        field(7; TotalQualityOrderPass; Integer)
+        {
+            
+            CalcFormula = count("QualityOrderLineResultsTable" where("Outcome" = field("QualityOrder")));   
+            Editable = false;
+            FieldClass = FlowField;
+        }
+        field(8; "Number Of Lines"; Integer)
+        {
+            Caption = 'Number Of Lines';
+            CalcFormula = count("QualityOrderLineResultsTable" where("QualityOrder" = field("QualityOrder")));                                           
+            Editable = false;
+            FieldClass = FlowField;
+        }
+        field(9; Code; Integer)
+        {
+            DataClassification = ToBeClassified;
+            TableRelation= QualityOrderLineResultsTable.Code;
+        }
+         field(21; Outcome; Code[20])
+        {
+            TableRelation = QualityOrderLineResultsTable.Outcome;
+            DataClassification = ToBeClassified;
+        }
         
         /*
          field(20; CertificateOfAnalysis; Integer)

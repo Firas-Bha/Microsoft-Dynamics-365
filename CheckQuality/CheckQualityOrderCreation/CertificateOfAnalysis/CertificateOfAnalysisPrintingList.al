@@ -46,6 +46,11 @@ page 50127 CertificateOfAnalysisList
                     ApplicationArea = All;
                     
                 }
+                   field(QualityOrder; rec.QualityOrder)
+                {
+                    ApplicationArea = All;
+                    
+                }
             }
         }
         area(Factboxes)
@@ -83,6 +88,7 @@ page 50127 CertificateOfAnalysisList
     PromotedIsBig = true;
     ApplicationArea = All;
    RunObject = report "MyReport";
+   //RunPageLink= "QualityOrder"=field(QualityOrder);
     
 }
 
