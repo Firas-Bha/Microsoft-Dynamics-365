@@ -308,6 +308,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2533124731 - Field 1763455583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NOL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table QualityResultsTable - Field NOL - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2533124731 - Field 3035113681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number Of Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -757,6 +762,11 @@
           <source>Acceptable Quality</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control AcceptableQuality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1271711743 - Control 772014655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>nol</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QualityResultsList - Control nol - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1271711743 - Control 3035113681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number Of Lines</source>

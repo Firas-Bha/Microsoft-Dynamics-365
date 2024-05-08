@@ -77,9 +77,13 @@ page 50122 CheckQualityPageList
                     {
                         ApplicationArea = All;
                         ToolTip = 'Specifies whether the record is open, waiting to be approved';
-                        //  Style = stats;
-
-
+                        StyleExpr = StyleExprtTxt;
+                        trigger OnValidate()
+                        var
+                            myInt: Integer;
+                        begin
+                            StyleExprtTxt := ChangeStatusColor.ChangeStatusColor(rec);
+                        end;
 
                     }
                     field(ReferenceType; rec.ReferenceType)
@@ -271,10 +275,42 @@ page 50122 CheckQualityPageList
 
     }
     var
-        myInt: Integer;
+        StyleExprtTxt: Text[50];
+        ChangeStatusColor: Codeunit ChangeColor;
 
+
+    trigger OnAfterGetRecord()
+    begin
+        StyleExprtTxt := ChangeStatusColor.ChangeStatusColor(Rec);
+    end;
 
 
 }
+
+codeunit 50105 ChangeColor
+{
+
+    var
+        myInt: Integer;
+
+    procedure ChangeStatusColor(Quality: record CheckQualityOrderTable): Text[50]
+    var
+        myInt: Integer;
+    begin
+        with Quality do
+            case Status of
+
+                Status::Pass:
+                    exit('favorable');
+                Status::Fail:
+                    exit('unfavorable');
+                Status::Open:
+                    exit('strongaccent');
+            end;
+
+    end;
+
+}
+
 
 

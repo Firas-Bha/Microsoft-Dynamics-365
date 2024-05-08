@@ -17,23 +17,34 @@ page 50124 QualityResultsList
             {
                 Caption = 'Quality Results';
 
+                field(QualityOrder; rec.QualityOrder)
+                {
+
+                    Caption = 'Quality Order ';
+                    ApplicationArea = All;
+                    Style = Strong;
+
+                    //Editable=false;
+                    trigger OnValidate()
+                    var
+                        TotalQualityOrder: Decimal;
+                        PassQuantity: Decimal;
+                        AcceptableLevel: Decimal;
+                        init: Decimal;
+                        "QualityOrderLineResults": Record "QualityOrderLineResultsTable";
+                        "CheckQualityOrderTable": Record "CheckQualityOrderTable";
+                        MyRecord2: Record "QualityResultsTable";
+
+                    begin
+
+                        //Message('Number of lines  %1',rec."NOL");      
+                    end;
+
+                }
+
                 field(SequenceNumber; rec.SequenceNumber)
                 {
                     Caption = 'Sequence Number';
-                    ApplicationArea = All;
-
-                }
-                field("Number Of Lines"; rec."Number Of Lines")
-                {
-                    Caption = 'Number Of Lines';
-                    ApplicationArea = All;
-                    
-
-                }
-                
-                field(TestValue; rec.TestValue)
-                {
-                    Caption = 'Test Value';
                     ApplicationArea = All;
 
                 }
@@ -51,6 +62,7 @@ page 50124 QualityResultsList
                         // Here, we assume that you have found the related records based on rec.Test
                         if TestTable.Get(rec.Test) then begin
 
+
                             // Now that the records are initialized, you can access their fields
 
 
@@ -65,23 +77,37 @@ page 50124 QualityResultsList
                                 SaveRecord();
 
                         end;
+                        rec.NOL := rec."Number Of Lines";
+                        CalculateAcceptableLevel(rec.AcceptableQuality);
+                         SaveRecord();
                     end;
 
                 }
+
+
+
+
+                field(TestValue; rec.TestValue)
+                {
+                    Caption = 'Test Value';
+                    ApplicationArea = All;
+
+                }
+
 
                 field(AcceptableQuality; rec.AcceptableQuality)
                 {
                     Caption = 'Acceptable Quality';
                     ApplicationArea = All;
                     Style = Strong;
-                    //Editable=false;
+                    Editable = false;
 
                     trigger OnValidate()
                     var
                         Ref: RecordRef;
                         TestQuality: Record "TableTests";
                     begin
-                        
+
                         if TestQuality.Get(rec.Test) then begin
                             // Check if AcceptableQuality is greater than AcceptableQualityLevel
                             if (rec.AcceptableQuality > TestQuality.AcceptableQualityLevel) then begin
@@ -104,42 +130,25 @@ page 50124 QualityResultsList
                     Caption = 'Test Result';
                     ApplicationArea = All;
                     Style = Strong;
-                    // Editable = false; // If you want to prevent manual editing
+                    Editable = false; // If you want to prevent manual editing
 
 
                 }
 
-                field(QualityOrder; rec.QualityOrder)
+
+                field("Number Of Lines"; rec."Number Of Lines")
                 {
-
-                    Caption = 'Quality Order ';
+                    Caption = 'Number Of Lines';
                     ApplicationArea = All;
-                    Style = Strong;
-                    //Editable=false;
-                    trigger OnValidate()
-                     var
-        TotalQualityOrder: Decimal;
-        PassQuantity: Decimal;
-        AcceptableLevel: Decimal;
-        "QualityOrderLineResults": Record "QualityOrderLineResultsTable";
-         "CheckQualityOrderTable":  Record  "CheckQualityOrderTable";
-    begin    
-        // Retrieve the total quality order from the QualityResultsTable
-        TotalQualityOrder := rec.TotalQualityOrderPass;
-        if (CheckQualityOrderTable.Get(rec.QualityOrder)) then
-            Message('Number of lines  %1',rec."Number Of Lines");
-            if (rec.Outcome = 'ACCEPTED') then begin 
-                Message('Number accepted  %1',rec.TotalQualityOrderPass);             
-                AcceptableLevel := rec.TotalQualityOrderPass / rec."Number Of Lines";
-                AcceptableLevel := rec.AcceptableQuality;
-            end   
-            else
-             Message('ff');
-             
-            end;
-
+                    //Visible = false;
                 }
-
+                field("nol"; rec."nol")
+                {
+                    Caption = 'nol';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Visible = false;
+                }
 
             }
 
@@ -182,64 +191,89 @@ page 50124 QualityResultsList
         PassQuantity: Decimal;
         AcceptableLevel: Decimal;
         "QualityOrderLineResults": Record "QualityOrderLineResultsTable";
+        MyRecord2: Record "QualityResultsTable";
     begin
         BelowxRec := false;
-        
 
-    
+
+
         Ref.Open(DATABASE::QualityResultsTable);
 
         if rec.SequenceNumber = '' then begin
             Setup.Get();
             rec.SequenceNumber := NoMgt.GetNextNo(Setup."No.", WORKDATE, true);
         end;
-        
-        //CalculateAcceptableLevel( rec.AcceptableQuality);
-       
+
+
+
         BelowxRec := true;
-       
+
         exit(true);
     end;
 
     trigger OnNewRecord(BelowxRec: Boolean)
     var
-    Lines: Integer;
-     MyRecord2: Record "QualityResultsTable";
-     begin
-         BelowxRec:=false;
-         Lines:= MyRecord2."Number Of Lines";
-         BelowxRec:=true;
-          
+        Lines: Integer;
+        nol: Decimal;
+        MyRecord2: Record "QualityResultsTable";
+    begin
+        BelowxRec := false;
+
+        BelowxRec := true;
+
 
     end;
 
-/*
-    local procedure CalculateAcceptableLevel(AcceptableQuality : Decimal) :Decimal
+
+    local procedure CalculateAcceptableLevel(AcceptableQuality: Decimal): Decimal
     var
         TotalQualityOrder: Decimal;
         PassQuantity: Decimal;
         AcceptableLevel: Decimal;
-        "QualityOrderLineResults": Record "QualityOrderLineResultsTable";
-         "CheckQualityOrderTable":  Record  "CheckQualityOrderTable";
-    begin    
-        // Retrieve the total quality order from the QualityResultsTable
-        TotalQualityOrder := rec.TotalQualityOrderPass;
-        if (QualityOrderLineResults.Get(rec.QualityOrder)) then
- 
-            Message('Number of lines  %1',rec."Number Of Lines");
-            if ("QualityOrderLineResults".Outcome = 'ACCEPTED') then begin 
-                Message('Number accepted  %1',rec.TotalQualityOrderPass);             
-                AcceptableLevel := rec.TotalQualityOrderPass / rec."Number Of Lines";
-                AcceptableLevel := rec.AcceptableQuality;
-            end   
-            else
-             Message('ff');
-             exit(AcceptableLevel)
-            end;
-      */       
- 
+        TotalQualityOrderAccepted: Integer;
+        "QualityOrder": Record "QualityOrderLineResultsTable";
+        "CheckQualityOrderTable": Record "CheckQualityOrderTable";
+        "QualityOrderResults": Record "QualityResultsTable";
+    begin
+        // Initialize TotalQualityOrder
+        TotalQualityOrder := 0;
+
+        // Filter QualityOrder records by the current QualityOrder
+        QualityOrder.SetFilter(QualityOrder, rec.QualityOrder);
+
+        // Loop through QualityOrder records
+        if QualityOrder.FindFirst() then begin
+            repeat
+                // Check if the outcome is ACCEPTED
+                if ("QualityOrder".Outcome = 'ACCEPTED') then begin
+                    // Increment TotalQualityOrder for each accepted outcome
+                    TotalQualityOrder += 1;
+                    //Message('Number accepted: %1', TotalQualityOrder);
+                end;
+            until QualityOrder.Next() = 0;
+        end;
+
+        // Update TotalQualityOrderPass
+        rec.TotalQualityOrderPass := TotalQualityOrder;
+
+        // Calculate AcceptableQuality
+        if rec.NOL <> 0 then
+            rec.AcceptableQuality := rec.TotalQualityOrderPass / rec.NOL;
+
+        // Return AcceptableQuality
+        exit(rec.AcceptableQuality);
+       
+    end;
 
 
-             
-            
+
+    trigger OnAfterGetRecord()
+    var
+        myInt: Integer;
+    begin
+        rec.NOL := rec."Number Of Lines";
+
+    end;
+
+
 }
