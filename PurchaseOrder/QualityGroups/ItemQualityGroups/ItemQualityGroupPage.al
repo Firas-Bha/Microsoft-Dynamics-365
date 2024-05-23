@@ -1,27 +1,32 @@
-page 50131 ItemQualityGroupList
+page 50123 ItemQualityGroupPage
 {
-    PageType = List;
-    Caption ='Item Quality Group Creation';
+    PageType = Card;
     ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = Administration;
     SourceTable = ItemQualityGroupTable;
-
+    
     layout
     {
         area(Content)
         {
-            repeater(GroupName)
+            group(GroupName)
             {
                 field("Item Number"; rec."Item Number")
                 {
                     ApplicationArea = All;
-                   
+                    trigger OnValidate()
+                  var
+                    ItemRecord: Record "Item";
+                begin
+                    if ItemRecord.Get(Rec."Item Number") then
+                        Rec.Item := ItemRecord.Description;
+                end;
 
                 }
                 field("Desc"; rec."Item")
                 {
                     ApplicationArea = All;
-                    //Editable=false;
+                    Editable=false;
 
                 }
 
@@ -31,34 +36,24 @@ page 50131 ItemQualityGroupList
                 }
             }
         }
-        area(Factboxes)
-        {
-
-        }
     }
-
+    
     actions
     {
         area(Processing)
         {
-            action(ItemQualityGroupPage)
+            action(ActionName)
             {
-                 Caption = 'Item Quality Group Creation';
                 ApplicationArea = All;
-                PromotedCategory = Category10;
-                Promoted = true;
-                PromotedIsBig = true;
-                Image = New;
-
-                trigger OnAction();
-                var
-                    testgroup: Page "ItemQualityGroupPage";
+                
+                trigger OnAction()
                 begin
-                    testgroup.run();
+                    
                 end;
             }
         }
     }
-
-
+    
+    var
+        myInt: Integer;
 }

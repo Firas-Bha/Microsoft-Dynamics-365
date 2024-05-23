@@ -17,7 +17,7 @@ page 50138 ItemSamplingsCard
                 Caption = 'Item Samplings';
 
                 // Fields related to Item Samplings
-                field(ItemSampling; rec.ItemSamplingValue)
+                field(ItemSampling; rec."Item Sampling Value")
                 {
                     Caption = 'Item Sampling';
                     ApplicationArea = All;
@@ -25,7 +25,7 @@ page 50138 ItemSamplingsCard
                     var
                         myInt: Integer;
                     begin
-                        if xrec.ItemSamplingValue = rec.ItemSamplingValue then
+                        if xrec."Item Sampling Value" = rec."Item Sampling Value" then
                             Message('Value already inserted');
 
                     end;
@@ -57,59 +57,64 @@ page 50138 ItemSamplingsCard
                     ApplicationArea = All;
                     trigger OnValidate()
                     var
-                       
+                        EditableCurrCode: Boolean;
                     begin
-                        
+
+                        // Check if the QuantitySpecification is set to "Fixed"
+                        if rec.QuantitySpecification = rec.QuantitySpecification::FixedQuantity then begin
+                            // Set the Editable property of the Pourcentage field to false
+                            rec.Pourcentage := 0;
+                        end;
+
                     end;
+
+
+
                 }
-                
+
                 field(Pourcentage; Rec.Pourcentage)
                 {
                     ApplicationArea = All;
-                   
-                                    Editable = false;
+                    Editable = true;
                     trigger OnValidate()
                     var
-        EditableCurrCode: Boolean;
-begin
-    // Check if the QuantitySpecification is set to "Fixed"
-    if rec.QuantitySpecification = rec.QuantitySpecification::FixedQuantity then
-    begin
-        // Set the Editable property of the Pourcentage field to false
-       EditableCurrCode := true;
-    end;
-end;
+                        EditableCurrCode: Boolean;
+                    begin
+                  
+
+                    end;
+
                 }
                 field("Specified Value"; rec."Specified Value")
-{
-    ApplicationArea = All;
-    Editable = true;
+                {
+                    ApplicationArea = All;
+                    Editable = true;
 
-    trigger OnValidate()
-    var
-        OriginalValue: Decimal;
-        Percentage: Decimal;
-        NewValue: Decimal;
-    begin
-        // Assuming OriginalValue and Percentage are assigned elsewhere
-        OriginalValue := rec."Specified Value";
-        Percentage := rec.Pourcentage;
-        if rec.QuantitySpecification = rec.QuantitySpecification::VariableQuantity then
-        begin
-            // Call the function to calculate the new value after applying the percentage decrease
-            NewValue := CalculateValueAfterPercentageDecrease(OriginalValue, Percentage);
-            // Assign the calculated value to the specified value field
-            rec.Value := NewValue;
-            
-            // Now you can use the NewValue as needed
-            Message('New value after applying percentage decrease: %1', NewValue);
-        end;
-    end;
-}
+                    trigger OnValidate()
+                    var
+                        OriginalValue: Decimal;
+                        Percentage: Decimal;
+                        NewValue: Decimal;
+                    begin
+                        // Assuming OriginalValue and Percentage are assigned elsewhere
+                        OriginalValue := rec."Specified Value";
+                        Percentage := rec.Pourcentage;
+                        if rec.QuantitySpecification = rec.QuantitySpecification::VariableQuantity then begin
+                            // Call the function to calculate the new value after applying the percentage decrease
+                            NewValue := CalculateValueAfterPercentageDecrease(OriginalValue, Percentage);
+                            // Assign the calculated value to the specified value field
+                            rec.Value := NewValue;
+
+                        end
+                        else if rec.QuantitySpecification = rec.QuantitySpecification::FixedQuantity then begin
+                            rec.Value := rec."Specified Value";
+                        end;
+                    end;
+                }
                 field(Value; rec.Value)
                 {
                     Caption = 'Value';
-                    Editable=false;
+                    Editable = false;
                     ApplicationArea = basic, suite;
                     Importance = Promoted;
 
@@ -204,13 +209,24 @@ end;
 
 
     end;
-procedure CalculateValueAfterPercentageDecrease(OriginalValue: Decimal; Percentage: Decimal): Decimal
-var
-    NewValue: Decimal;
-begin
-    NewValue := OriginalValue * ( Percentage / 100);
-    exit(NewValue);
-end;
+
+    procedure CalculateValueAfterPercentageDecrease(OriginalValue: Decimal; Percentage: Decimal): Decimal
+    var
+        NewValue: Decimal;
+    begin
+        NewValue := OriginalValue * (Percentage / 100);
+        exit(NewValue);
+    end;
+
+    procedure UpdatePourcentageEditable()
+    var
+        edit: Boolean;
+    begin
+
+        if Rec.QuantitySpecification = Rec.QuantitySpecification::FixedQuantity then
+            CurrPage.Editable(false);
+        CurrPage.Update();
+    end;
 
 }
 

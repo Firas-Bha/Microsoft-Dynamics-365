@@ -52,6 +52,7 @@ page 50145 TestGroupPage
                     //Editable = false;
                     Caption = 'Item Sampling';
                     ApplicationArea = All;
+                    Visible = false;
 
                 }
                 field(Destructive; rec.Destructive)

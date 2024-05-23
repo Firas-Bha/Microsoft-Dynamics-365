@@ -4,12 +4,12 @@ table 50105 QualityGroupTable
 
     fields
     {
-        field(1; QualityGroup;Text[20])
+        field(1; QualityGroup;Text[50])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(2; Description; Text[20])
+        field(2; Description; Text[50])
         {
             DataClassification = ToBeClassified;
         }

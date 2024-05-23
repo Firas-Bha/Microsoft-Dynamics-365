@@ -17,7 +17,7 @@ table 50144 TestGroupCreationTable
             DataClassification = ToBeClassified;
 
         }
-        field(2; Test; Text[20])
+        field(2; Test; Text[100])
         {
             DataClassification = ToBeClassified;
             TableRelation = TableTests.Test;
@@ -38,7 +38,7 @@ table 50144 TestGroupCreationTable
         {
             DataClassification = ToBeClassified;
         }
-        field(7; TestGroup; Text[20])
+        field(7; TestGroup; Text[50])
         {
             DataClassification = ToBeClassified;
             TableRelation = TestGroupTable.TestGroup;

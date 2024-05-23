@@ -23,7 +23,8 @@
   "resourceExposurePolicy": {
     "allowDebugging": true,
     "allowDownloadingSource": true,
-    "includeSourceInSymbolFile": true
+    "includeSourceInSymbolFile": true,
+    "applyToDevExtension": true
   },
   "runtime": "12.0",
   "features": [

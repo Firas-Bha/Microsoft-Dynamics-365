@@ -54,6 +54,7 @@ page 50142 TestGroupPageList
                     {
                         Caption = 'Item Sampling';
                         ApplicationArea = All;
+                        Visible = false;
 
                     }
                     field(Destructive; rec.Destructive)

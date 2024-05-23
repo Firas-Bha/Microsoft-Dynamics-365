@@ -225,51 +225,49 @@ page 50122 CheckQualityPageList
                 end;
 
             }
-            action(Validate)
-            {
-                Caption = 'Validate';
-                ApplicationArea = All;
+           action(Validate)
+{
+    Caption = 'Validate';
+    ApplicationArea = All;
 
-                trigger OnAction()
-                var
-                    QualityOrder: record "QualityOrderLineResultsTable";
-                    CheckQuality: record "QualityResultsTable";
-
-                begin
-                    QualityOrder.SetFilter(QualityOrder, rec.QualityOrder);
-                    if QualityOrder.Findlast() then begin
-                        if (Rec.Status = Rec.Status::Open) then begin
-                            CheckQuality.SetFilter(QualityOrder, rec.QualityOrder);
-                            if CheckQuality.FindFirst() then begin
-                                if (CheckQuality.TestResult = true) then begin
-                                    if (rec.Quantityy = QualityOrder."SumQuantity") then begin
-                                        rec.Status := rec.Status::Pass;
-                                        rec.Modify();
-                                        SaveRecord();
-                                        Message('Status updated to Pass.');
-                                    end
-                                    else
-                                        rec.Status := rec.Status::Open;
-                                    Message('Status Will Stay Opened')
-                                end;
-                                if (CheckQuality.TestResult = false) then begin
-                                    if (rec.Quantityy = QualityOrder."SumQuantity") then begin
-                                        rec.Status := rec.Status::Fail;
-                                        rec.Modify();
-                                        SaveRecord();
-                                        Message('Status Failed.');
-                                    end;
-
-                                end;
-                            end;
-
+    trigger OnAction()
+    var
+        QualityOrder: Record "QualityOrderLineResultsTable";
+        CheckQuality: Record "QualityResultsTable";
+    begin
+        // Filter and find the last quality order record
+        QualityOrder.SetFilter(QualityOrder, rec.QualityOrder);
+        if QualityOrder.FindLast() then begin
+            // Check if the current record status is "Open"
+            if (rec.Status = rec.Status::Open) then begin
+                // Filter and find the first check quality record
+                CheckQuality.SetRange(QualityOrder, rec.QualityOrder);
+                if CheckQuality.FindFirst() then begin
+                    // If test result is true and quantity matches sum quantity
+                    if (CheckQuality.TestResult = true) then begin
+                        if (rec.Quantityy = QualityOrder."SumQuantity") then begin
+                            rec.Status := rec.Status::Pass;
+                            rec.Modify();
+                            Message('Status updated to Pass.');
+                        end else begin
+                            rec.Status := rec.Status::Open;
+                            Message('Status will stay Open.');
+                        end;
+                    end;
+                    // If test result is false and quantity matches sum quantity
+                    if (CheckQuality.TestResult = false) then begin
+                        if (rec.Quantityy = QualityOrder."SumQuantity") then begin
+                            rec.Status := rec.Status::Fail;
+                            rec.Modify();
+                            Message('Status updated to Fail.');
                         end;
                     end;
                 end;
+            end;
+        end;
+    end;
+}
 
-
-
-            }
         }
 
 

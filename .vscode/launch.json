@@ -9,7 +9,7 @@
             "server": "http://localhost:8080/BC230/",
             "serverInstance": "BC230",
             "authentication": "Windows",
-            "startupObjectId": 50122,
+            "startupObjectId": 42,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
@@ -17,7 +17,8 @@
             "enableSqlInformationDebugger": true,
             "tenant": "default",
             "usePublicURLFromServer": true,
-            "schemaUpdateMode": "ForceSync"
+            "schemaUpdateMode": "ForceSync",
+            
         }
     ]
 }

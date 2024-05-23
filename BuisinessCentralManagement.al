@@ -64,6 +64,12 @@ pageextension 50122 RHMenu extends "Business Manager Role Center"
                     ApplicationArea = All;
                     RunObject = page "Item Sampling List View";
                 }
+                  action("WorkerResponsiblePage")
+                {
+                    Caption = 'Worker Responsible';
+                    ApplicationArea = All;
+                    RunObject = page "WorkerResponsiblePage";
+                }
                
 
             }

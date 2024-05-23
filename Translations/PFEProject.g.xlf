@@ -178,6 +178,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CheckQualityOrderTable - Field Warehouse - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 265784179 - Field 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemQualityGroupTable - Field Item - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 265784179 - Field 1763702386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Number</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -198,10 +203,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field FullBlocking - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4249207501 - Field 945827239 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ItemSamplingValue</source>
+        <trans-unit id="Table 4249207501 - Field 916037071 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Sampling Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field ItemSamplingValue - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ItemSamlingsTable - Field Item Sampling Value - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4249207501 - Field 2079370345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Pourcentage</source>
@@ -683,6 +688,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CheckQualityPageList - Action Validate - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2247735879 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Quality Group Creation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemQualityGroupList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2247735879 - Action 3443662656 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Quality Group Creation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemQualityGroupList - Action ItemQualityGroupPage - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3031683627 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
           <source>About Item Sampling</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1122,6 +1137,11 @@
           <source>Tests</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action Tests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1707040939 - Action 1207838379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Worker Responsible</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RHMenu - Action WorkerResponsiblePage - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1707040939 - Action 3368603653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Demandes d’achat</source>

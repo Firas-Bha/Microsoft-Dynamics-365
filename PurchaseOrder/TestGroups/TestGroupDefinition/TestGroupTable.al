@@ -5,7 +5,7 @@ table 50140 TestGroupTable
 
     fields
     {
-        field(1; TestGroup; Text[20])
+        field(1; TestGroup; Text[100])
         {
             Caption='Test Group';
             DataClassification = ToBeClassified;
@@ -15,7 +15,7 @@ table 50140 TestGroupTable
             end;
 
         }
-        field(2; Description; Text[20])
+        field(2; Description; Text[100])
         {
             DataClassification = ToBeClassified;
         
@@ -29,10 +29,10 @@ table 50140 TestGroupTable
               
             end;
         }
-        field(4; ItemSampling; Code[20])
+        field(4; ItemSampling; Code[50])
         {
             DataClassification = ToBeClassified;
-            TableRelation = ItemSamlingsTable.ItemSamplingValue;
+            TableRelation = ItemSamlingsTable."Item Sampling Value";
              trigger OnValidate()    
             begin
               

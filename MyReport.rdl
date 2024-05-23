@@ -11,76 +11,6 @@
       <rd:DataSourceID>2f91a9ec-bfd3-40a0-b1f4-84bbaeb413e1</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="CertificateOfAnalysis">
-          <DataField>CertificateOfAnalysis</DataField>
-        </Field>
-        <Field Name="ItemNumber">
-          <DataField>ItemNumber</DataField>
-        </Field>
-        <Field Name="AccountSelection">
-          <DataField>AccountSelection</DataField>
-        </Field>
-        <Field Name="CreatedBy">
-          <DataField>CreatedBy</DataField>
-        </Field>
-        <Field Name="CreatedDateAndTime">
-          <DataField>CreatedDateAndTime</DataField>
-        </Field>
-        <Field Name="Site">
-          <DataField>Site</DataField>
-        </Field>
-        <Field Name="Warehouse">
-          <DataField>Warehouse</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="ReferenceType">
-          <DataField>ReferenceType</DataField>
-        </Field>
-        <Field Name="RefernceNumber">
-          <DataField>RefernceNumber</DataField>
-        </Field>
-        <Field Name="Status">
-          <DataField>Status</DataField>
-        </Field>
-        <Field Name="QualityOrder">
-          <DataField>QualityOrder</DataField>
-        </Field>
-        <Field Name="TestGroup">
-          <DataField>TestGroup</DataField>
-        </Field>
-        <Field Name="outc">
-          <DataField>outc</DataField>
-        </Field>
-        <Field Name="QualityOrderr">
-          <DataField>QualityOrderr</DataField>
-        </Field>
-        <Field Name="ResultsQuantity">
-          <DataField>ResultsQuantity</DataField>
-        </Field>
-        <Field Name="ResultsQuantityFormat">
-          <DataField>ResultsQuantityFormat</DataField>
-        </Field>
-        <Field Name="Outcome">
-          <DataField>Outcome</DataField>
-        </Field>
-        <Field Name="Test">
-          <DataField>Test</DataField>
-        </Field>
-        <Field Name="TestResultString">
-          <DataField>TestResultString</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -1287,4 +1217,74 @@ hlRWljd8ZkDSopHdWyzqEsouwA0CEICA1gV8dV/pvVwRmrR+xmmmP1/eYeQ+Ym2r5pzrVp00j/p0y6Hp
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CertificateOfAnalysis">
+          <DataField>CertificateOfAnalysis</DataField>
+        </Field>
+        <Field Name="ItemNumber">
+          <DataField>ItemNumber</DataField>
+        </Field>
+        <Field Name="AccountSelection">
+          <DataField>AccountSelection</DataField>
+        </Field>
+        <Field Name="CreatedBy">
+          <DataField>CreatedBy</DataField>
+        </Field>
+        <Field Name="CreatedDateAndTime">
+          <DataField>CreatedDateAndTime</DataField>
+        </Field>
+        <Field Name="Site">
+          <DataField>Site</DataField>
+        </Field>
+        <Field Name="Warehouse">
+          <DataField>Warehouse</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="ReferenceType">
+          <DataField>ReferenceType</DataField>
+        </Field>
+        <Field Name="RefernceNumber">
+          <DataField>RefernceNumber</DataField>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+        </Field>
+        <Field Name="QualityOrder">
+          <DataField>QualityOrder</DataField>
+        </Field>
+        <Field Name="TestGroup">
+          <DataField>TestGroup</DataField>
+        </Field>
+        <Field Name="outc">
+          <DataField>outc</DataField>
+        </Field>
+        <Field Name="QualityOrderr">
+          <DataField>QualityOrderr</DataField>
+        </Field>
+        <Field Name="ResultsQuantity">
+          <DataField>ResultsQuantity</DataField>
+        </Field>
+        <Field Name="ResultsQuantityFormat">
+          <DataField>ResultsQuantityFormat</DataField>
+        </Field>
+        <Field Name="Outcome">
+          <DataField>Outcome</DataField>
+        </Field>
+        <Field Name="Test">
+          <DataField>Test</DataField>
+        </Field>
+        <Field Name="TestResultString">
+          <DataField>TestResultString</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

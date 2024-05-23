@@ -4,12 +4,12 @@ table 50130 TableTests
 
     fields
     {
-        field(1; Test; Text[20])
+        field(1; Test; Text[50])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(2; Description; Text[30])
+        field(2; Description; Text[50])
         {
             DataClassification = ToBeClassified;
         }

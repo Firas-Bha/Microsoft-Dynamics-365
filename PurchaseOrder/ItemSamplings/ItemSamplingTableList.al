@@ -12,7 +12,7 @@ page 50143 "Item Sampling List View"
         {
             repeater(ItemSamplings)
             {
-                field(ItemSamplingValue; Rec.ItemSamplingValue)
+                field(ItemSamplingValue; Rec."Item Sampling Value")
                 {
                     ApplicationArea = All;
 

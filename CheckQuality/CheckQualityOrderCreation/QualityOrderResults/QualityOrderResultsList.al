@@ -56,7 +56,9 @@ page 50124 QualityResultsList
                     var
                         TestTable: Record TableTests;
                         testgroup: Record TestGroupCreationTable;
+                        TestQuality: Record "TableTests";
                     begin
+                        
                         // Initialize TestTable and testgroup records based on your business logic
                         // For example, you might need to find the related records based on certain conditions
                         // Here, we assume that you have found the related records based on rec.Test
@@ -79,7 +81,28 @@ page 50124 QualityResultsList
                         end;
                         rec.NOL := rec."Number Of Lines";
                         CalculateAcceptableLevel(rec.AcceptableQuality);
-                         SaveRecord();
+                        SaveRecord();
+                         TestQuality.SetFilter(test,rec.Test);
+                        if TestQuality.FindLast() then begin
+                            // Check if AcceptableQuality is greater than AcceptableQualityLevel
+                            if (rec.AcceptableQuality > TestQuality.AcceptableQualityLevel) then begin
+                               // Message('acceptable quality is %1 and test quality is %2 ', rec.AcceptableQuality, TestQuality.AcceptableQualityLevel);
+                                rec.TestResult := true;
+                                rec.Modify();
+                                SaveRecord();
+                            end
+                            // Check if AcceptableQuality falls within the range of MinimumMeasurementValue and MaximumMeasurementValue
+                            else if (rec.AcceptableQuality >= TestQuality.MinimumMeasurementValue) AND (rec.AcceptableQuality <= TestQuality.MaximumMeasurementValue) then begin
+                                rec.TestResult := true;
+                                 rec.Modify();
+                                SaveRecord();
+                            end
+                            else begin
+                                rec.TestResult := false;
+                              //  Message('ok');
+                            end;
+                        end;
+                    
                     end;
 
                 }
@@ -107,21 +130,30 @@ page 50124 QualityResultsList
                         Ref: RecordRef;
                         TestQuality: Record "TableTests";
                     begin
-
-                        if TestQuality.Get(rec.Test) then begin
+                        /*
+                        TestQuality.SetFilter(test,rec.Test);
+                        if TestQuality.FindLast() then begin
                             // Check if AcceptableQuality is greater than AcceptableQualityLevel
                             if (rec.AcceptableQuality > TestQuality.AcceptableQualityLevel) then begin
+                                Message('acceptable quality is %1 and test quality is %2 ', rec.AcceptableQuality, TestQuality.AcceptableQualityLevel);
                                 rec.TestResult := true;
+                                rec.Modify();
+                                SaveRecord();
                             end
                             // Check if AcceptableQuality falls within the range of MinimumMeasurementValue and MaximumMeasurementValue
                             else if (rec.AcceptableQuality >= TestQuality.MinimumMeasurementValue) AND (rec.AcceptableQuality <= TestQuality.MaximumMeasurementValue) then begin
                                 rec.TestResult := true;
+                                 rec.Modify();
+                                SaveRecord();
                             end
                             else begin
                                 rec.TestResult := false;
+                                Message('ok');
                             end;
                         end;
+                        */
                     end;
+                    
                 }
 
 
@@ -131,8 +163,6 @@ page 50124 QualityResultsList
                     ApplicationArea = All;
                     Style = Strong;
                     Editable = false; // If you want to prevent manual editing
-
-
                 }
 
 
@@ -262,7 +292,7 @@ page 50124 QualityResultsList
 
         // Return AcceptableQuality
         exit(rec.AcceptableQuality);
-       
+
     end;
 
 

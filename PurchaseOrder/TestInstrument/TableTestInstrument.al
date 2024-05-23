@@ -9,7 +9,7 @@ table 50132 TestInstrument
             DataClassification = ToBeClassified;
 
         }
-        field(2; Description; Text[30])
+        field(2; Description; Text[50])
         {
             DataClassification = ToBeClassified;
         }

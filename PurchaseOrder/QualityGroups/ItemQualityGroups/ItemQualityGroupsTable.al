@@ -10,11 +10,20 @@ table 50134 ItemQualityGroupTable
             TableRelation = Item."No.";
 
         }
-        field(2; "Quality Group"; Text[20])
+        field(2; "Quality Group"; Text[50])
         {
             DataClassification = ToBeClassified;
             TableRelation = QualityGroupTable.QualityGroup;
         }
+        
+        field(3; "Item"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = Item.Description;
+            ValidateTableRelation = false;
+        }
+    
+        
     }
 
     keys
@@ -23,6 +32,8 @@ table 50134 ItemQualityGroupTable
         {
             Clustered = true;
         }
+        
+       
     }
 
     fieldgroups
@@ -35,7 +46,7 @@ table 50134 ItemQualityGroupTable
 
     trigger OnInsert()
     begin
-
+          
     end;
 
     trigger OnModify()

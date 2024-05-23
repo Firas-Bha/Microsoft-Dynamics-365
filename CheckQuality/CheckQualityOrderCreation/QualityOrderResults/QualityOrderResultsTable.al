@@ -14,7 +14,7 @@ table 50123 QualityResultsTable
         {
             DataClassification = ToBeClassified;
         }
-        field(3; Test; Text[20])
+        field(3; Test; Text[50])
         {
             DataClassification = ToBeClassified;
             TableRelation = TableTests.Test;

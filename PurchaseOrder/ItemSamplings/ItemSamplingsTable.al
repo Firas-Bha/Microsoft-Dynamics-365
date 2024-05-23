@@ -4,7 +4,7 @@ table 50139 ItemSamlingsTable
 
     fields
     {
-        field(1; ItemSamplingValue; code[20])
+        field(1; "Item Sampling Value"; code[50])
         {
             DataClassification = ToBeClassified;
            
@@ -35,7 +35,6 @@ table 50139 ItemSamlingsTable
         {
             DataClassification = ToBeClassified;
             
-            
         }
 
 
@@ -57,10 +56,14 @@ table 50139 ItemSamlingsTable
 
     keys
     {
-        key(Key1; Value)
+       
+          key(Key1; "Item Sampling Value")
         {
-            Clustered = false;
+            Clustered = true;
         }
+        
+     
+      
         
         
     }
@@ -93,7 +96,7 @@ begin
         // Assign the calculated value to the Value field
         rec.Value := NewValue;
         // Now you can use the NewValue as needed
-        Message('New value after modifying Specified Value: %1', NewValue);
+       // Message('New value after modifying Specified Value: %1', NewValue);
     end;
 end;
 

@@ -18,7 +18,7 @@ table 50120 CheckQualityOrderTable
         }
         field(19; "No."; code[20])
         {
-            TableRelation = "Purchase Header"."No.";
+            TableRelation = WorkerResponsibleTable.Worker;
           //  ValidateTableRelation = false;
             DataClassification = ToBeClassified;
         }
@@ -53,7 +53,7 @@ table 50120 CheckQualityOrderTable
             DataClassification = ToBeClassified;
             //TableRelation = "No. Series".Code;
         }
-        field(5; TestGroup; Text[20])
+        field(5; TestGroup; Text[50])
         {
             DataClassification = ToBeClassified;
             TableRelation = TestGroupTable.TestGroup;
