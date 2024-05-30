@@ -16,16 +16,18 @@ stages:
       platform: x64
       version: "current"
       appVersion: "1.0"
-      appBuild: $[counter(variables['appVersion'], 0)]
+      appBuild: $[counter(variables['appVersion'],0)]
       appRevision: 0
-      createRuntimePackages: false
-      skipComponentGovernanceDetection: true
+      createRuntimePackages: False
+      skipComponentGovernanceDetection: True
+
+ 
 
     steps:
     - task: PowerShell@2
       displayName: 'Reading Settings'
       inputs:
-        targetType: 'filePath'
-        filePath: 'C:\Users\Legion 5 Pro\Desktop\AzureDevops\Shell\Old.HelloWorld-master\scripts\Read-Settings.ps1'
+        targetType: filePath
+        filePath: 'scripts\Read-Settings.ps1'
         arguments: '-appVersion "$(appVersion).$(appBuild).$(appRevision)"'
         failOnStderr: true
