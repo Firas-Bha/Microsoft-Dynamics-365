@@ -1,4 +1,6 @@
 # Define the trigger for the pipeline
+
+
 trigger:
  - main
 
