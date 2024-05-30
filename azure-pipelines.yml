@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: PowerShell@2
+  inputs:
+    filePath: 'C:\Users\Legion 5 Pro\Desktop\AzureDevops\Shell\Old.HelloWorld-master'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
