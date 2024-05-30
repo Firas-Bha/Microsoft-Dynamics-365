@@ -25,13 +25,5 @@ stages:
 
  
 
-    steps:
-    - task: PowerShell@2
-      displayName: 'Reading Settings'
-      inputs:
-        targetType: filePath
-        filePath: 'C:\Users\Legion 5 Pro\Desktop\AzureDevops\Shell\Old.HelloWorld-master\scripts\Read-Settings.ps1'
-        arguments: '-appVersion "$(appVersion).$(appBuild).$(appRevision)"'
-        failOnStderr: true
-        pwsh: true  # Use PowerShell Core
+   
   
