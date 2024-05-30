@@ -22,3 +22,15 @@ stages:
       appRevision: 0
       createRuntimePackages: False
       skipComponentGovernanceDetection: True
+
+    pool:
+      name: Default
+
+    steps:
+    - task: PowerShell@2
+      displayName: 'Reading Settings'
+      inputs:
+        targetType: filePath
+        filePath: 'scripts\Read-Settings.ps1'
+        arguments: '-appVersion "$(appVersion).$(appBuild).$(appRevision)"'
+        failOnStderr: true
