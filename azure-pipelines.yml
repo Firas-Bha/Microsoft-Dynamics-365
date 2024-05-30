@@ -29,6 +29,13 @@ stages:
         script: |
           Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 
+    - task: PowerShell@2
+      displayName: 'Update Build Number'
+      inputs:
+        targetType: 'inline'
+        script: |
+          Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"
+
     - task: PublishBuildArtifacts@1
       inputs:
         pathtoPublish: '$(Build.ArtifactStagingDirectory)'
