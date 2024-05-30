@@ -1,13 +1,12 @@
 # Define the trigger for the pipeline
-
-
 trigger:
- - main
+- main
 
 # Define the agent pool
 pool:
   name: 'my-personal-computer'
 
+# Define stages
 stages:
 - stage: Build
   jobs:
@@ -22,14 +21,10 @@ stages:
       createRuntimePackages: False
       skipComponentGovernanceDetection: True
     steps:
-    - task: NuGetToolInstaller@1
-
     - task: NuGetCommand@2
       inputs:
         command: 'restore'
-        restoreSolution: '**/*.sln'
-        feedsToUse: 'config'
-        nugetConfigPath: 'nuget.config'
+        restoreSolution: '$(solution)'
 
     - task: VSBuild@1
       inputs:
@@ -57,6 +52,3 @@ stages:
       inputs:
         pathtoPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: 'drop'
-
-   
-  
