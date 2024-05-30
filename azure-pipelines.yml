@@ -23,9 +23,6 @@ stages:
       createRuntimePackages: False
       skipComponentGovernanceDetection: True
 
-    pool:
-      name: Default
-
     steps:
     - task: PowerShell@2
       displayName: 'Reading Settings'
