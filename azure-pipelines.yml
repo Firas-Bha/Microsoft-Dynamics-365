@@ -22,14 +22,6 @@ stages:
       skipComponentGovernanceDetection: True
     steps:
 
-
-    - task: VSBuild@1
-      inputs:
-        solution: '**/*.sln'
-        msbuildArgs: '/p:Configuration=Release'
-        platform: 'Any CPU'
-        configuration: 'Release'
-
     - task: PowerShell@2
       displayName: 'Set Execution Policy'
       inputs:
