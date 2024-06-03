@@ -5,6 +5,8 @@ trigger:
 # Define the agent pool
 pool:
   name: 'my-personal-computer'
+variables:
+ - group: BuildVariables
 
 # Define stages
 stages:
