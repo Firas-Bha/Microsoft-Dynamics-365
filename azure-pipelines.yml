@@ -44,7 +44,8 @@ stages:
       inputs:
         targetType: 'inline'
         script: |
-          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber
+          Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
+          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
 
     - task: PowerShell@2
       displayName: 'Create Business Central Container'
