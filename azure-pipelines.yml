@@ -47,18 +47,7 @@ stages:
           Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
           Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
 
-    - task: PowerShell@2
-      displayName: 'Create Business Central Container'
-      inputs:
-        targetType: 'inline'
-        script: |
-          New-BcContainer `
-            -accept_eula `
-            -imageName "mcr.microsoft.com/businesscentral/sandbox:base" `
-            -containerName "bc-container" `
-            -auth "NavUserPassword" `
-            -credential (New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)) `
-            -updateHosts
+ 
 
     - task: PowerShell@2
       displayName: 'Build Business Central App'
