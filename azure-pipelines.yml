@@ -54,7 +54,7 @@ stages:
         script: |
           New-BcContainer `
             -accept_eula `
-            -imageName "mcr.microsoft.com/businesscentral/sandbox:latest" `
+            -imageName "mcr.microsoft.com/businesscentral/sandbox:base" `
             -containerName "bc-container" `
             -auth "NavUserPassword" `
             -credential (New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)) `
