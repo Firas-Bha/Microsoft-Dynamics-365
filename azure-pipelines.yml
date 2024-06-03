@@ -5,6 +5,7 @@ trigger:
 # Define the agent pool
 pool:
   name: 'my-personal-computer'
+
 variables:
  - group: BuildVariables
 
@@ -38,7 +39,47 @@ stages:
         script: |
           Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"
 
+    - task: PowerShell@2
+      displayName: 'Install BcContainerHelper'
+      inputs:
+        targetType: 'inline'
+        script: |
+          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber
+
+    - task: PowerShell@2
+      displayName: 'Create Business Central Container'
+      inputs:
+        targetType: 'inline'
+        script: |
+          New-BcContainer `
+            -accept_eula `
+            -imageName "mcr.microsoft.com/businesscentral/sandbox" `
+            -containerName "bc-container" `
+            -auth "NavUserPassword" `
+            -credential (New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)) `
+            -updateHosts
+
+    - task: PowerShell@2
+      displayName: 'Build Business Central App'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $credential = New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)
+          Invoke-BcContainerNavApp -containerName "bc-container" -credential $credential -appProjectFolder "."
+
+    - task: PowerShell@2
+      displayName: 'Copy artifacts to staging directory'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $outputDir = "$(Build.ArtifactStagingDirectory)"
+          if (-not (Test-Path -Path $outputDir)) {
+            New-Item -ItemType Directory -Path $outputDir
+          }
+          Copy-Item -Path "$(System.DefaultWorkingDirectory)\*.app" -Destination $outputDir -Force
+
     - task: PublishBuildArtifacts@1
+      displayName: 'Publish Build Artifacts'
       inputs:
         pathtoPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: 'MyProject'
