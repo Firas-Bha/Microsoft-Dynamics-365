@@ -1,4 +1,5 @@
 # Define the trigger for the pipeline
+
 trigger:
 - main
 
@@ -8,6 +9,7 @@ pool:
 
 variables:
   - group: BuildVariables
+  
 
 # Define stages
 stages:
@@ -46,7 +48,10 @@ stages:
         script: |
           Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
           Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
-
+    - task: Docker@2
+      inputs:
+        command: 'build'
+        Dockerfile: '**/Dockerfile'
 
 
 - stage: Deploy
