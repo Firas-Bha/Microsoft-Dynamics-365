@@ -1,5 +1,5 @@
 # Use the official Business Central image from Microsoft container registry
-FROM mcr.microsoft.com/businesscentral/sandbox:latest
+FROM mcr.microsoft.com/businesscentral
 
 # Set environment variables
 ENV ACCEPT_EULA=Y
