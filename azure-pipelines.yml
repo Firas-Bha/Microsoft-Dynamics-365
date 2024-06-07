@@ -48,10 +48,9 @@ stages:
         script: |
           Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
           Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
-    - task: Docker@2
-      inputs:
-        command: 'build'
-        Dockerfile: '**/Dockerfile'
+          $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select latest
+          New-BCContainer -accept_eula -containerName test -artifactUrl $artifactUrl
+    
 
 
 - stage: Deploy
