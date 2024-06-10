@@ -58,7 +58,7 @@ stages:
       displayName: 'Unpack Power Platform Solution'
       inputs:
         SolutionInputFile: '$(Build.StagingDirectory)\$(SolutionName)_Unmanaged.zip'
-        SolutionTargetFolder: '$(Build.StagingDirectory)\$(SolutionName)\Unmanaged'
+        SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)\Unmanaged'
         
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Unpacked Solution'
