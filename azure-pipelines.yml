@@ -63,6 +63,6 @@ stages:
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Unpacked Solution'
       inputs:
-        PathtoPublish: '$(Build.StagingDirectory)\$(SolutionName)\Unmanaged'
+        PathtoPublish: '$(Build.SourcesDirectory)\$(SolutionName)\Unmanaged'
         ArtifactName: 'drop'
         publishLocation: 'Container'
