@@ -1,5 +1,4 @@
 # Define the trigger for the pipeline
-
 trigger:
 - main
 
@@ -9,7 +8,6 @@ pool:
 
 variables:
   - group: BuildVariables
-  
 
 # Define stages
 stages:
@@ -26,7 +24,6 @@ stages:
       createRuntimePackages: False
       skipComponentGovernanceDetection: True
     steps:
-
     - task: PowerShell@2
       displayName: 'Set Execution Policy'
       inputs:
@@ -40,32 +37,32 @@ stages:
         targetType: 'inline'
         script: |
           Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"
-
-    - task: PowerShell@2
-      displayName: 'Install BcContainerHelper'
+          
+    - task: PowerPlatformToolInstaller@2
+      displayName: 'Install Power Platform Tools'
       inputs:
-        targetType: 'inline'
-        script: |
-          Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
-          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
-          $artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select latest
-          New-BCContainer -accept_eula -containerName test -artifactUrl $artifactUrl
-    
+        DefaultVersion: true
 
-
-- stage: Deploy
-  jobs:
-  - deployment: DeployToEnvironment
-    displayName: 'Deploy to Production'
-    environment: 'Production'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - task: PowerShell@2
-            displayName: 'Deploy to Production Environment'
-            inputs:
-              targetType: 'inline'
-              script: |
-                # Add your deployment script here
-                # Example: Publish-Application -Environment 'Production'
+    - task: PowerPlatformExportSolution@2
+      displayName: 'Export Power Platform Solution'
+      inputs:
+        authenticationType: 'PowerPlatformSPN'
+        PowerPlatformSPN: 'Source Connection'
+        SolutionName: '$(SolutionName)'
+        SolutionOutputFile: '$(Build.StagingDirectory)\$(SolutionName)_Unmanaged.zip'
+        TargetVersion: '1.0.0.0'
+        AsyncOperation: true
+        MaxAsyncWaitTime: '60'
+        
+    - task: PowerPlatformUnpackSolution@2
+      displayName: 'Unpack Power Platform Solution'
+      inputs:
+        SolutionInputFile: '$(Build.StagingDirectory)\$(SolutionName)_Unmanaged.zip'
+        SolutionTargetFolder: '$(Build.StagingDirectory)\$(SolutionName)\Unmanaged'
+        
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Unpacked Solution'
+      inputs:
+        PathtoPublish: '$(Build.StagingDirectory)\$(SolutionName)\Unmanaged'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
