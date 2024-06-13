@@ -50,14 +50,6 @@ stages:
  
 
     - task: PowerShell@2
-      displayName: 'Build Business Central App'
-      inputs:
-        targetType: 'inline'
-        script: |
-          $credential = New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)
-          Invoke-BcContainerNavApp -containerName "bc-container" -credential $credential -appProjectFolder "."
-
-    - task: PowerShell@2
       displayName: 'Copy artifacts to staging directory'
       inputs:
         targetType: 'inline'
