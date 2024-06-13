@@ -24,6 +24,7 @@ stages:
       createRuntimePackages: False
       skipComponentGovernanceDetection: True
     steps:
+
     - task: PowerShell@2
       displayName: 'Set Execution Policy'
       inputs:
@@ -37,32 +38,38 @@ stages:
         targetType: 'inline'
         script: |
           Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"
-          
-    - task: PowerPlatformToolInstaller@2
-      displayName: 'Install Power Platform Tools'
-      inputs:
-        DefaultVersion: true
 
-    - task: PowerPlatformExportSolution@2
-      displayName: 'Export Power Platform Solution'
+    - task: PowerShell@2
+      displayName: 'Install BcContainerHelper'
       inputs:
-        authenticationType: 'PowerPlatformSPN'
-        PowerPlatformSPN: 'Source Connection'
-        SolutionName: '$(SolutionName)'
-        SolutionOutputFile: '$(Build.StagingDirectory)\$(SolutionName)_Unmanaged.zip'
-        TargetVersion: '1.0.0.0'
-        AsyncOperation: true
-        MaxAsyncWaitTime: '60'
-        
-    - task: PowerPlatformUnpackSolution@2
-      displayName: 'Unpack Power Platform Solution'
+        targetType: 'inline'
+        script: |
+          Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
+          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
+
+ 
+
+    - task: PowerShell@2
+      displayName: 'Build Business Central App'
       inputs:
-        SolutionInputFile: '$(Build.StagingDirectory)\$(SolutionName)_Unmanaged.zip'
-        SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)\Unmanaged'
-        
+        targetType: 'inline'
+        script: |
+          $credential = New-Object pscredential -ArgumentList "admin", (ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force)
+          Invoke-BcContainerNavApp -containerName "bc-container" -credential $credential -appProjectFolder "."
+
+    - task: PowerShell@2
+      displayName: 'Copy artifacts to staging directory'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $outputDir = "$(Build.ArtifactStagingDirectory)"
+          if (-not (Test-Path -Path $outputDir)) {
+            New-Item -ItemType Directory -Path $outputDir
+          }
+          Copy-Item -Path "$(System.DefaultWorkingDirectory)\*.app" -Destination $outputDir -Force
+
     - task: PublishBuildArtifacts@1
-      displayName: 'Publish Unpacked Solution'
+      displayName: 'Publish Build Artifacts'
       inputs:
-        PathtoPublish: '$(Build.SourcesDirectory)\$(SolutionName)\Unmanaged'
-        ArtifactName: 'drop'
-        publishLocation: 'Container'
+        pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        artifactName: 'MyProject'
