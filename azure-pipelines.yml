@@ -57,10 +57,10 @@ stages:
           }
           Copy-Item -Path "$(System.DefaultWorkingDirectory)\*.app" -Destination $outputDir -Force
 
-    - task: PublishCodeCoverageResults@1
-      inputs:
-        codeCoverageTool: 'JaCoCo' # 'Cobertura' | 'JaCoCo'. Required. Code coverage tool. Default: JaCoCo.
-        summaryFileLocation: '' # string. Required. Summary file.
+   # - task: PublishCodeCoverageResults@1
+     # inputs:
+      #  codeCoverageTool: 'JaCoCo' # 'Cobertura' | 'JaCoCo'. Required. Code coverage tool. Default: JaCoCo.
+        #summaryFileLocation: '' # string. Required. Summary file.
         # pathToSources: # string. Path to Source files.
         # reportDirectory: # string. Report directory.
         # additionalCodeCoverageFiles: # string. Additional files.
