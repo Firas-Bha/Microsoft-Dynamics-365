@@ -38,13 +38,6 @@ stages:
         script: |
           Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"
 
-    - task: PowerShell@2
-      displayName: 'Install BcContainerHelper'
-      inputs:
-        targetType: 'inline'
-        script: |
-          Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
-          Install-Module -Name BcContainerHelper -Force -SkipPublisherCheck -AllowClobber -Scope CurrentUser
 
     - task: PowerShell@2
       displayName: 'Copy artifacts to staging directory'
@@ -56,15 +49,6 @@ stages:
             New-Item -ItemType Directory -Path $outputDir
           }
           Copy-Item -Path "$(System.DefaultWorkingDirectory)\*.app" -Destination $outputDir -Force
-
-   # - task: PublishCodeCoverageResults@1
-     # inputs:
-      #  codeCoverageTool: 'JaCoCo' # 'Cobertura' | 'JaCoCo'. Required. Code coverage tool. Default: JaCoCo.
-        #summaryFileLocation: '' # string. Required. Summary file.
-        # pathToSources: # string. Path to Source files.
-        # reportDirectory: # string. Report directory.
-        # additionalCodeCoverageFiles: # string. Additional files.
-        # failIfCoverageEmpty: false # boolean. Fail when code coverage results are missing. Default: false.
 
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Build Artifacts'
